@@ -1,0 +1,1233 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body{
+    font-family: sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+        /* ********** inicio cabeçalho  ********** */
+
+#cabecalho{
+  
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+}
+
+#navLateral{
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5000%;
+    background-color: black;
+    display: none;
+}
+
+#navLateral div{
+    display: flex;
+    width: 50vw;
+    height: 8vh;
+    margin: 100px auto;
+    text-align: center;
+}
+
+#navLateral div a{
+    margin: 5px auto;
+    width: 100%;
+    background-color: rgb(56, 167, 111);
+    color: rgb(0,0,0);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#navLateral div a:hover{
+    background-color:rgba(56, 167, 111,0.2);;
+    border: solid 2px rgb(56, 167, 111);
+    color: rgb(56, 167, 111);
+
+}
+ 
+
+#navBar{
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    background-color: rgba(0, 0, 0, 0.9);
+
+}
+#btnResponsivo{
+    background-color:rgba(0, 0, 0, 0.1);
+    border: solid 2px rgb(56,167,111);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    border-radius: 5px;
+}
+#buttonHamburguer1{
+    width: 36px;
+    height: 4px;
+    border: none;
+    background-color:rgb(56, 167, 111);
+    position: absolute;
+    top: 18px;
+    left: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.1s;
+    
+
+}
+#buttonHamburguer2{
+    width: 15px;
+    height: 4px;
+    border: none;
+    background-color:rgb(56, 167, 111);
+    position: absolute;
+    top: 28px;
+    left: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+
+}
+
+#buttonHamburguer3{
+    width: 24px;
+    height: 4px;
+    border: none;
+    background-color:rgb(56, 167, 111);
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+    transform: rotate(0deg);
+
+}
+
+li#btnResponsivo,button{
+    display: none;
+
+}
+#navBar ul{
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+#navBar a{
+    padding: 10px;
+    color: rgb(172, 172, 172);
+    font-weight: 700;
+}
+
+
+.border:hover{
+    border-bottom: solid 3px rgb(56, 167, 111);
+    transition: 0.3s;
+
+}
+
+.borderStaff{
+    position: relative;
+    left: 20px;
+}
+#navBar ul li a img{
+    width: 100px;
+    height:90px;
+    object-fit: fill;
+    border-radius: 20px;
+    padding-top: 10px;
+    margin-left: 70px;
+}
+
+#navBar ul li a img:hover{
+    width: 120px;
+    height: 100px;
+    transition:0.5s;
+    box-shadow: 0px 30px 20px rgb(56, 167, 111);
+    
+}
+
+        /********** botao whatsapp ***********/
+
+#whatsApp{
+    width: 100px;
+    font-size: 3.5em;
+    color: rgb(56, 167, 111);
+    position:fixed;
+    left: 0px;
+    top: 590px;
+}
+
+#whatsApp:hover{
+    color: rgb(30, 194, 9);
+    transition: 0.5s;
+}
+
+            /* ********* Sessao Crosstraining *********** */
+
+#picture{
+    width: 100vw;
+    height: 75vh;
+    border: solid  1px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url(../onlineGym/imagens/rm8.jpg);
+    background-attachment: fixed;
+    background-position-y: -100px;
+    
+}
+
+#picture h1{
+    color:black;
+    width: 60vw;
+    margin: 180px auto;
+    text-align:center;
+    font-style: italic;
+    box-shadow: 0px 10px 20px 10px black;
+    border-radius: 5px;
+    display: fixed;
+}
+
+#sessaoCrosstraining main{
+    width:  60vw;
+    margin: 60px auto;
+}
+
+#sessaoCrosstraining main h1{
+        color: rgb(56, 167, 111);
+        font-size: 2em;
+        text-align: center;
+        font-style: italic;
+}
+
+#sessaoCrosstraining main h4{
+   text-align: center;
+   padding-top: 10px;
+   letter-spacing: -1px;
+
+}
+
+.hrcross{
+    width: 130px;
+    height: 1px;
+    border:none;
+    background-color: black;
+    margin: 12px auto;
+    
+}
+
+figure iframe{
+    margin: 50px 130px;
+    border-radius: 20px;
+    width: 580px;
+    height: 420px;
+    box-shadow: 20px 30px 40px rgba(0, 0, 0, 0.9);
+    
+}
+
+            /* ************ Sessao Lpo ********** */
+
+#sessaoLpo{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+}
+
+#sessaoLpo main{
+    width: 50vw;
+}
+
+#sessaoLpo h1{
+    width: 43vw;
+    color: rgb(56, 167, 111);
+    font-size: 1.7em;
+    margin: 30px auto;
+    font-style: italic;
+}
+
+#sessaoLpo h4{
+    margin: 0 auto;
+    font-size: 1.3em;
+    text-align: center;
+    width: 25vw;
+    height: 50vh;
+    color: seashell;
+}
+
+#imagemLpo{
+    width: 50vw;
+    height: 100vh;
+    background-image: url(../onlineGym/imagens/rm1.jpg);
+    background-size:720px 493px;
+    background-repeat: no-repeat;
+}
+
+        /* ************ Staff ********** */
+
+#staff main{
+
+    width:  60vw;
+    margin: 60px auto;
+
+}
+
+#staff main h1{
+    color: rgb(56, 167, 111);
+    font-size: 2em;
+    text-align: center;
+    font-style: italic;
+}
+
+#infoStaff{
+   
+    width: 90vw;
+    height: 65vh;
+    margin: 0px auto;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#Mateus{
+    width: 25vw;
+    height: 60vh;
+    border-radius: 20px;
+    background-color: rgba(196, 195, 195, 0.041);
+    box-shadow: 20px 20px 50px rgb(0,0,0,0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    background-image: url(../onlineGym/imagens/mateus.jpg);
+    opacity: 0.7;   
+    box-shadow: 10px 20px 50px 30px rgba(0, 0, 0, 0.9);   
+    background-position: -50px 0px; 
+}
+
+#Mateus .card{
+    height: 25vh;
+    text-align: center;
+    transform: translateY(250px);
+    transition: 0.5s;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    color: #fff;
+}
+
+#Mateus:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#Mateus:hover .card{
+    transform: translateY(160px);
+    transition: 1s;
+    opacity: 1;
+}
+
+#Mateus .card h1{
+    color:rgb(56, 167, 111);
+    font-style: italic;
+}
+
+#Mateus .card a{
+    padding:6px 12px;
+    background-color:rgb(56, 167, 111);
+    position: relative;
+    top: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+#Mateus .card a:hover{
+    background-color: #fff;
+    color: rgb(56, 167, 111);
+    transition: 0.5s;
+}
+
+
+#Rose{
+    width: 25vw;
+    height: 60vh;
+    border-radius: 20px;
+    background-color: rgba(196, 195, 195, 0.041);
+    box-shadow: 20px 20px 50px rgb(0,0,0,0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    background-image: url(../onlineGym/imagens/rosane-santos.jpg);
+    background-size:520px 420px;
+    opacity: 0.7; 
+    box-shadow: 10px 20px 50px 30px rgba(0, 0, 0, 0.9); 
+    background-position:-50px -25px;   
+    
+}
+
+#Rose .card{
+    height: 28vh;
+    text-align: center;
+    transform: translateY(250px);
+    transition: 0.5s;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    color: #fff;
+}
+
+#Rose:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#Rose:hover .card{
+    transform: translateY(160px);
+    transition: 1s;
+    opacity: 1;
+}
+
+#Rose .card h1{
+    color:rgb(56, 167, 111);
+    font-style: italic;
+}
+
+#Rose .card a{
+    padding:6px 12px;
+    background-color:rgb(56, 167, 111);
+    position: relative;
+    top: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+#Rose .card a:hover{
+    background-color: #fff;
+    color: rgb(56, 167, 111);
+    transition: 0.5s;
+}
+
+        /* *********** Sessao RM CENTER ************** */
+
+#RmCenter{
+    width: 100vw;
+    height: 75vh;
+    border: solid  1px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url(../onlineGym/imagens/local.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+    display: flex;    
+    justify-content: space-around;
+}
+
+#videoMateus iframe{
+    display: none;
+    width: 340px;
+    height: 280px;
+    border-radius: 20px;
+    opacity: 0.7;
+    position: relative;
+    top: 100px;
+    left: -20px;
+
+}
+
+#videoMateus iframe:hover{
+    width: 520px;
+    height: 400px;
+    transition: 0.4s;
+    opacity: 1;
+    margin-top: -50px;
+    
+}
+
+
+
+#videoRose iframe{
+    display: none;
+    width: 340px;
+    height: 280px;
+    opacity: 0.7;
+    border-radius: 20px;
+    position: relative;
+    top: 100px;
+    left: 0px;
+
+}
+
+#videoRose iframe:hover{
+    width: 520px;
+    height: 400px;
+    transition: 0.4s;
+    opacity: 1;
+    margin-top: -50px;
+    
+}
+
+#nossoEspaco{
+    width: 25vw;
+    height: 68vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 3px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#nossoEspaco:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+#nossoEspaco h1{
+    color: rgb(56, 167, 111);
+    font-style: italic;
+}
+
+#nossoEspaco p{
+    color: #fff;
+    width: 200px;
+    margin: 30px auto;
+}
+
+.vejaMais{
+    border-radius: 10px;
+    color: #fff;
+    background-color:rgb(56, 167, 111);
+    padding: 10px 8px;
+    position: relative;
+    top:-15px;
+    left:2px;
+    
+}
+
+.vejaMais:hover{
+    color: rgb(56, 167, 111);
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+        /* *********** footer **********  */
+
+footer{
+    width: 100vw;
+    height: 6vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    font-size: 0.6em;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+footer p{
+    height: 2vh;
+    font-size: 1.3em;
+    align-self: center;
+}
+
+    /* ************* Media Query ************ */
+
+    /* ******* Media 1300px ******* */
+
+    @media (max-width: 1300px){
+       body{
+           background-color: royalblue;
+           overflow-x: hidden;
+       }
+
+       #picture{
+        background-position-x: -100px;
+        
+    }
+       /* video figure */
+
+       figure iframe{
+        margin: 50px 110px;
+        width: 520px;
+        height: 400px;
+        
+    }
+
+    /* sessao Lpo */
+
+    #sessaoLpo h1{
+        font-size: 1.6em;
+    }
+    
+    #sessaoLpo h4{
+        font-size: 1.2em;
+    }
+
+    /* sessao de cards */
+
+    #Mateus{
+        background-position-x: -35px;  
+    }
+
+    #Mateus .card{
+        height: 28vh;
+    }
+    
+    
+    
+    
+    #Rose{
+        background-position-x: -60px;     
+    }
+
+    #RmCenter{
+        width: 100vw;
+        height:80vh;
+        border: solid  1px rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.9);
+        background-image: url(../onlineGym/imagens/local.png);
+      background-attachment:scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -200px;
+        display: flex;    
+        justify-content: space-around;
+    }
+
+    #nossoEspaco{
+        width: 25vw;
+        height: 68vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+        footer{
+            z-index: 1;
+        }
+       
+    }
+
+    /* ******* Media 1200px ******* */
+
+    @media (max-width: 1200px){
+        body{
+            background-color: green;
+        }
+
+        #picture{
+            background-position-x: -150px;
+        }
+
+        figure iframe{
+            margin: 50px 110px;
+            width: 480px;
+            height: 360px;
+            
+        }
+
+        #sessaoLpo h1{
+            font-size: 1.5em;
+        }
+        
+        #sessaoLpo h4{
+            font-size: 1.1em;
+        }
+
+        #Mateus{
+            background-position-x: -60px;  
+        }
+              
+        
+        #Rose{
+            background-position-x: -60px;
+            background-position-y: -25px;     
+        }
+
+        #Rose .card{
+            height: 30vh;
+        }
+
+        #RmCenter{
+            background-size: 1330px 740px;
+            background-position-y: -100px;
+            background-position-x: -140px;
+        }
+
+        footer{
+            width: 100vw;
+            height: 8vh;
+        }
+    
+     }
+
+     /* ******* Media 1100px ******* */
+
+     @media (max-width: 1100px){
+        body{
+            background-color: yellow;
+        }
+
+        #picture{
+            background-position-x: -200px;
+        }
+
+        figure iframe{
+            margin: 50px 110px;
+            width: 440px;
+            height: 320px;
+            
+        }
+
+        #sessaoLpo h1{
+            font-size: 1.3em;
+        }
+        
+        #sessaoLpo h4{
+            font-size: 1em;
+        }
+
+        #imagemLpo{
+            width: 50vw;
+            height: 100vh;
+            background-image: url(../onlineGym/imagens/rm1.jpg);
+            background-size:720px 493px;
+            background-repeat: no-repeat;
+            background-position: -100px -0.7px;
+        }
+
+        #Mateus{
+            background-position-x: -90px;  
+        }
+
+        #Rose .card{
+            height: 30vh;
+        }
+        
+        #Rose{
+            background-position-x: -60px;     
+        }
+
+        #Rose .card{
+            height: 32vh;
+        }
+
+        #RmCenter{
+            background-size: 1220px 740px;
+            background-position-y: -100px;
+            background-position-x: -130px;
+        }
+
+     }
+
+     /* ******* Media 1000px ******* */
+
+     @media (max-width: 1000px){
+        body{
+            background-color: orange;
+        }
+
+        #picture{
+            background-position-x: -220px;
+        }
+
+        figure iframe{
+            margin: 50px 65px;
+            width: 430px;
+            height: 320px;           
+        }
+
+        #sessaoLpo h1{
+            font-size: 1.1em;
+        }
+        
+        #sessaoLpo h4{
+            font-size: 1em;
+        }
+
+        #infoStaff{
+   
+            width: 90vw;
+            height: 120vh;
+            margin: 0px auto;
+            margin-top: -20px;
+            display: block;
+        }
+
+        #Mateus{
+            width: 80vw;
+            height: 50vh;
+            margin: 10px auto;
+            background-size: 640px 700px; 
+            background-position: 30px -70px;
+        }
+        
+        #Mateus:hover .card{
+            transform: translateY(80px);
+            transition: 1s;
+            opacity: 1;
+        }
+
+        #Mateus .card h1{
+            color:rgb(56, 167, 111);
+            font-style: italic;
+            padding:15px;
+        }
+
+        #Mateus .card p{
+            width: 70vw;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        #Mateus .card a{
+            padding:10px 50px;
+            background-color:rgb(56, 167, 111);
+            position: relative;
+            text-transform: uppercase;
+            top: 30px;
+            color: #fff;
+            border-radius: 20px;
+        }
+        
+        #Rose{
+            width: 80vw;
+            height: 50vh;
+            margin: 70px auto;
+            background-size: cover; 
+            background-position: 0px -20px;
+            
+        }
+
+        #Rose:hover .card{
+            transform: translateY(80px);
+            transition: 1s;
+            opacity: 1;
+        }
+
+        #Rose .card h1{
+            color:rgb(56, 167, 111);
+            font-style: italic;
+            padding:15px;
+        }
+
+        #Rose .card p{
+            width: 70vw;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        #Rose .card a{
+            padding:10px 50px;
+            background-color:rgb(56, 167, 111);
+            position: relative;
+            text-transform: uppercase;
+            top: 30px;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        #RmCenter{
+            background-size: 1100px 740px;
+            background-position-x:-60px;
+        }
+        
+        
+     }
+
+     /* ******* Media 840px ******* */
+
+     @media (max-width: 840px){
+        body{
+            background-color:purple;
+        }
+
+        #picture{
+            background-position-x: -220px;
+            background-size: 1040px 740px;
+        }
+
+
+        figure iframe{
+            margin: 50px 60px;
+            width: 380px;
+            height: 280px;            
+        }
+
+        #sessaoLpo h1{
+            font-size: 1.2em;
+            margin: 30px  auto;
+            width: 50%;
+            text-align: center;
+        }
+        
+        #sessaoLpo h4{
+            font-size: 1em;
+        }
+        #imagemLpo{
+            width: 50vw;
+            height: 100vh;
+            background-image: url(../onlineGym/imagens/rm1.jpg);
+            background-size:720px 493px;
+            background-repeat: no-repeat;
+            background-position: -140px -0.7px;
+        }
+
+        #RmCenter{
+            background-size: 900px 740px;
+            background-position-x:-70px;
+        }
+
+       
+     }
+     
+
+     /* ******* Media 760px ******* */
+
+     @media (max-width: 760px){
+        body{
+            background-color:rgb(128, 0, 49);
+        }
+
+        #picture{
+            background-position-x: -160px;
+            background-size: cover;
+        }
+
+        figure iframe{
+            margin: 50px 60px;
+            width: 350px;
+            height: 230px;
+            
+        }
+
+        #sessaoLpo h1{
+            font-size: 1.2em;
+            margin: 30px  auto;
+            width: 50%;
+            text-align: center;
+        }
+        
+        #sessaoLpo h4{
+            font-size: 0.9em;
+        }
+
+        #imagemLpo{
+            width: 50vw;
+            height: 100vh;
+            background-image: url(../onlineGym/imagens/rm1.jpg);
+            background-size:720px 493px;
+            background-repeat: no-repeat;
+            background-position: -160px -0.7px;
+        }
+
+        #Mateus{
+            width: 80vw;
+            height: 50vh;
+            margin: 10px auto;
+            background-size: 640px 700px; 
+            background-position: 30px -70px;
+        }
+        
+        #Rose{
+            width: 80vw;
+            height: 50vh;
+            margin: 70px auto;
+            background-size: cover; 
+            background-position: 0px -0px;
+            
+        }
+
+        #nossoEspaco{
+            width: 32vw;
+            height: 70vh;
+        }
+
+        #nossoEspaco h1{
+            width: 32vw;
+            color: rgb(56, 167, 111);
+            font-style: italic;
+        }
+        
+        #nossoEspaco p{
+            color: #fff;
+            width: 180px;
+            margin: 8px auto;
+        }
+        
+        .vejaMais{
+            border-radius: 10px;
+            color: #fff;
+            background-color:rgb(56, 167, 111);
+            padding: 10px 8px;
+            position: relative;
+            top:5px;
+            left:2px;
+            
+        }
+
+     }
+
+      /* ******* Media 680px ******* */
+
+      @media (max-width: 680px){
+        body{
+            background-color:rgb(38, 0, 128);
+        }
+
+
+        li#btnResponsivo,button{
+            display: block;
+        }
+
+        #ulNav li a.border{
+            display: none;
+        }
+
+        #picture{
+            background-position-x: -200px;
+            background-size: 1040px 720px;
+        }
+
+        figure iframe{
+            margin: 50px 40px;
+            width: 330px;
+            height: 210px;
+            
+        }
+
+        #sessaoLpo h1{
+            font-size: 1.2em;
+            margin: 30px  auto;
+            width: 50%;
+            text-align: center;
+        }
+        
+        #sessaoLpo h4{
+            font-size: 0.9em;
+        }
+
+        #imagemLpo{
+            width: 50vw;
+            height: 100vh;
+            background-image: url(../onlineGym/imagens/rm1.jpg);
+            background-size:720px 493px;
+            background-repeat: no-repeat;
+            background-position: -170px -0.7px;
+        }
+
+        #Mateus .card{
+            height: 32vh;
+        }
+        
+
+     }
+
+      /* ******* Media 600px ******* */
+
+      @media (max-width: 600px){
+        body{
+            background-color:rgb(7, 160, 180);
+           
+        }
+
+        #picture{
+            background-position-x: -200px;
+        }
+
+        figure iframe{
+            margin: 50px 20px;
+            width: 300px;
+            height: 200px;            
+        }
+
+        #sessaoLpo h1{
+            font-size: 1.2em;
+            margin: 30px  auto;
+            width: 50%;
+            text-align: center;
+        }
+        
+        #sessaoLpo h4{
+            font-size: 0.7em;
+        }
+
+        #imagemLpo{
+            width: 50vw;
+            height: 100vh;
+            background-image: url(../onlineGym/imagens/rm1.jpg);
+            background-size:720px 493px;
+            background-repeat: no-repeat;
+            background-position: -200px -0.7px;
+        }
+
+        #nossoEspaco{
+            width: 45vw;
+            height: 70vh;
+        }
+
+        #nossoEspaco h1{
+            width: 32vw;
+            margin: 0 auto;
+            color: rgb(56, 167, 111);
+            font-style: italic;
+        }
+        
+        #nossoEspaco p{
+            color: #fff;
+            width: 200px;
+            margin: 8px auto;
+        }
+        
+        .vejaMais{
+            border-radius: 10px;
+            color: #fff;
+            background-color:rgb(56, 167, 111);
+            padding: 10px 8px;
+            position: relative;
+            top:5px;
+            left:2px;
+            
+        }
+
+     }
+
+      /* ******* Media 500px ******* */
+
+      @media (max-width: 500px){
+        body{
+            background-color:rgb(180, 7, 7);
+        }
+
+        #picture{
+            background-position-x: -200px;
+        }
+
+        figure iframe{
+            margin: 50px 20px;
+            width: 250px;
+            height: 150px;            
+        }
+
+        #sessaoLpo{
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 100vw;
+            height: 100vh;
+            display: block;
+        }
+        
+        #sessaoLpo main{
+            width: 50vw;
+        }
+        
+        #sessaoLpo h1{
+            width: 100vw;
+            color: rgb(56, 167, 111);
+            font-size: 1.4em;
+            margin: 0px auto;
+            padding-top: 10px;
+            font-style: italic;
+        }
+        
+        #sessaoLpo h4{
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 1em;
+            text-align: center;
+            width: 90vw;
+            height: 28vh;
+            color: seashell;
+        }
+        
+        #imagemLpo{
+            width: 100vw;
+            height: 61vh;
+            background-image: url(../onlineGym/imagens/rm1.jpg);
+            background-size:720px 493px;
+            background-position-x: -10px;
+            background-repeat: no-repeat;
+        }
+
+        #Mateus .card{
+            height: 34vh;
+        }
+
+        #Rose .card{
+            height: 34vh;
+    
+        }
+        
+     }
+
+      /* ******* Media 400px ******* */
+
+      @media (max-width: 400px){
+        body{
+            background-color:rgb(164, 173, 110);
+        }
+
+        figure iframe{
+            margin: 50px -10px;
+            width: 250px;
+            height: 150px;           
+        }
+        #sessaoLpo{
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 100vw;
+            height: 100vh;
+            display: block;
+        }
+        
+        #sessaoLpo main{
+            width: 50vw;
+        }
+        
+        #sessaoLpo h1{
+            width: 100vw;
+            color: rgb(56, 167, 111);
+            font-size: 1.4em;
+            margin: 0px auto;
+            padding: 10px;
+            font-style: italic;
+        }
+        
+        #sessaoLpo h4{
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 1em;
+            text-align: center;
+            width: 95vw;
+            height: 28vh;
+            color: seashell;
+        }
+        
+        #imagemLpo{
+            width: 100vw;
+            height: 55vh;
+            background-image: url(../onlineGym/imagens/rm1.jpg);
+            background-size:720px 493px;
+            background-repeat: no-repeat;
+        }
+     }
+
+     
