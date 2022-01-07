@@ -21,7 +21,15 @@ btn.addEventListener("click",() => {
     }
 })
 
+var staffMenu = document.getElementById("staffMenu").addEventListener("click",(event) => {
+    document.getElementById("infoStaff").scrollIntoView({behavior:"smooth"});
+    event.preventDefault();
+})
 
+var estruturaMenu = document.getElementById("estruturaMenu").addEventListener("click",(event) => {
+    document.getElementById("nossoEspaco").scrollIntoView({behavior:"smooth"});
+    event.preventDefault();
+})
 
 
 
