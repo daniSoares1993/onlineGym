@@ -122,6 +122,35 @@ li#btnResponsivo,button{
     display: none;
 
 }
+
+li#btnResponsivo.active #buttonHamburguer1{
+
+    position: absolute;
+    left: 50px;
+    background-color: transparent;
+}
+
+li#btnResponsivo.active #buttonHamburguer2{
+    width: 30px;
+    top: 18px;
+    left: 4px;
+    transform: rotate(45deg);
+    transition: 0.8s;
+
+}
+
+li#btnResponsivo.active #buttonHamburguer3{
+
+    width: 30px;
+    top: 18px;
+    left: 4px;
+    transform: rotate(495deg);
+}
+
+li#btnResponsivo.active #navLateral {
+    display: block;
+    transition: 1s;
+}
 #navBar ul{
     height: 8vh;
     display: flex;
@@ -562,6 +591,8 @@ footer p{
         background-position-x: -100px;
         
     }
+
+    
        /* video figure */
 
        figure iframe{
