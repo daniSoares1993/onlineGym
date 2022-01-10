@@ -457,7 +457,7 @@ figure iframe{
 
 #RmCenter{
     width: 100vw;
-    height: 75vh;
+    height: 80vh;
     border: solid  1px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.9);
     background-image: url(../onlineGym/imagens/local.png);
@@ -515,7 +515,7 @@ figure iframe{
 
 #nossoEspaco{
     width: 25vw;
-    height: 68vh;
+    height: 72vh;
     background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
     margin-top: 3px;
@@ -544,17 +544,72 @@ figure iframe{
     border-radius: 10px;
     color: #fff;
     background-color:rgb(56, 167, 111);
-    padding: 10px 8px;
-    position: relative;
-    top:-15px;
-    left:2px;
-    
+    padding: 10px 8px;  
+    text-transform: uppercase;
+      
 }
 
 .vejaMais:hover{
     color: rgb(56, 167, 111);
     background-color: #fff;
     transition: 0.5s;
+}
+
+/****************** horarios ************/
+
+#horarios{
+    
+    width: 100vw;
+    height: 80vh;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -30px;
+}
+
+#horarios h1{
+    margin-top: 40px;
+    color: rgb(56, 167, 111);
+    font-size: 2em;
+    text-align: center;
+    font-style: italic;
+}
+
+#horarioCross h1{
+    color: rgb(56, 167, 111);
+    font-size: 2em;
+    text-align: center;
+    font-style: italic;
+}
+
+#horarioCross img{
+    margin-top: 100px;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+#horarioCross img:hover{
+    box-shadow: 20px 40px 30px rgb(56, 167, 111);
+    opacity: 1;
+    transition: 1s;
+}
+
+#horarioLpo img{
+    margin-top: 100px;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+#horarioLpo img:hover{
+    box-shadow: 20px 40px 30px rgb(56, 167, 111);
+    opacity: 1;
+    transition: 1s;
 }
 
         /* *********** footer **********  */
@@ -575,6 +630,118 @@ footer p{
     height: 2vh;
     font-size: 1.3em;
     align-self: center;
+}
+
+/****** pagina de contato **********/
+#backgroundContato{
+    background-color:  rgb(56, 167, 111);
+    height: 360px;
+    width: 100vw;
+    position: relative;
+    top: 120px;
+   
+}
+
+#backgroundContato div{
+    margin-left: 100px;
+    padding-top: 10px;
+}
+
+.phone{
+    opacity: 0.7;
+}
+.facebook{
+    background-color: rgb(0,0,0);
+    color: rgb(56, 167, 111);
+    font-size: 2em;
+    padding: 5px;
+    border-radius: 5px;
+}
+.instagram{
+    background-color: rgb(0,0,0);
+    color:rgb(56, 167, 111);
+    font-size: 2em;
+    padding: 5px;
+    border-radius: 5px;
+}
+.wpp{
+    background-color: rgb(0,0,0);
+    color: rgb(56, 167, 111);
+    font-size: 2em;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.email{
+    opacity: 0.7;
+}
+
+.localizacao{
+    opacity: 0.7;
+}
+
+#backgroundContato iframe{
+    border-radius: 20px;
+}
+#contatoRm{
+    background-color:rgb(190, 189, 189);
+    overflow: hidden;
+}
+
+#contato{
+    background-color: rgb(172, 172, 172,0.4);
+    width: 40vw;
+    height: 61vh;
+    position: relative;
+    top: -270px;
+    left: 700px;
+    padding-top: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 30px 30px rgb(0,0,0);
+}
+
+#contato h1{
+    font-size: 2em;
+    font-weight: 100;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+form  input{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 25vw;
+    height: 5vh;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+form input:focus{
+    transition: 1s;
+    background-color: rgb(0,0,0);
+    color: rgb(56, 167, 111);
+    border:transparent;
+}
+
+
+
+form input::placeholder{
+    color: black;
+    text-transform: uppercase;
+    font-style: italic; 
+    font-size: 0.8em;   
+}
+
+
+form input:focus::placeholder{
+    transition: 1s;
+    color: rgb(80, 241, 161);
 }
 
 
@@ -711,9 +878,7 @@ footer p{
             width: 100vw;
             height: 8vh;
         }
-    
-     }
-
+    }       
      /* ******* Media 1100px ******* */
 
      @media (max-width: 1100px){

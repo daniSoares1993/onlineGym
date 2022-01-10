@@ -1,5 +1,7 @@
 VanillaTilt.init(document.querySelectorAll("#Mateus"));
 VanillaTilt.init(document.querySelectorAll("#Rose"));
+VanillaTilt.init(document.querySelectorAll("#horarioLpo"));
+VanillaTilt.init(document.querySelectorAll("#horarioCross"));
 
 var body = document.getElementById("home");
 
