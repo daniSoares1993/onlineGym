@@ -3,12 +3,17 @@ VanillaTilt.init(document.querySelectorAll("#Rose"));
 VanillaTilt.init(document.querySelectorAll("#horarioLpo"));
 VanillaTilt.init(document.querySelectorAll("#horarioCross"));
 
-var body = document.getElementById("home");
+var bodyHome = document.getElementById("home");
+var bodyContato = document.getElementById("contatoRm")
 
 var btn = document.getElementById("btnResponsivo");
 var navLateral = document.getElementById("navLateral");
 var btnClass = document.getElementsByClassName('active');
 
+var img1 = document.getElementById("estruturaImg1")
+var img2 = document.getElementById("estruturaImg2")
+var img3 = document.getElementById("estruturaImg3")
+var img4 = document.getElementById("estruturaImg4")
 
 
 btn.addEventListener("click",() => {
@@ -16,10 +21,13 @@ btn.addEventListener("click",() => {
 
     if( navLateral.style.display != "block"){
         navLateral.style.display = "block";
-        home.style.overflow = "hidden";
+        bodyHome.style.overflow = "hidden";
+        bodyContato.style.overflow = "hiddden";
+
     } else if(navLateral.style.display === "block"){
         navLateral.style.display = "none";
-        home.style.overflowY = "scroll";
+        bodyHome.style.overflowY = "scroll";
+        bodyContato.style.overflow = "scroll";
     }
 })
 
@@ -30,6 +38,11 @@ var staffMenu = document.getElementById("staffMenu").addEventListener("click",(e
 
 var estruturaMenu = document.getElementById("estruturaMenu").addEventListener("click",(event) => {
     document.getElementById("nossoEspaco").scrollIntoView({behavior:"smooth"});
+    event.preventDefault();
+})
+
+var estruturaHome = document.getElementById("homeMenu").addEventListener("click",(event) => {
+    document.getElementById("sessaoCrosstraining").scrollIntoView({behavior:"smooth"});
     event.preventDefault();
 })
 

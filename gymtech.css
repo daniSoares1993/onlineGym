@@ -744,8 +744,81 @@ form input:focus::placeholder{
     color: rgb(80, 241, 161);
 }
 
+/****** Galeria de fotos *******/
+#nossaEstrutura footer{
+    position: absolute;
+    top: 618px;
+}
+#estruturaFotos{
+    background-color:  rgb(56, 167, 111);
+    height: 360px;
+    width: 100vw;
+    position: relative;
+    top: 120px;
+    text-align: center;
+}
 
+#galeriaImagens{
+    width: 70vw;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 
+#galeriaImagens img{
+    width: 30vw;
+    height: 20vh;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#galeriaImagens img:hover{
+    width: 35vw;
+    height: 20vh;
+   transition: 1s;
+    opacity: 1;
+}
+
+#imagemGrande{
+    display: none;
+    width: 80vw;
+    height: 60vh;
+    border: solid 1px red;
+    margin: -65px auto;
+}
+
+.left{
+    position: relative;
+    top: 200px;
+    left: -490px;
+    font-size: 2.5em;
+    opacity: 0.8;
+    color: rgb(27, 27, 27);
+    cursor: pointer;
+}
+
+.right{
+    position: relative;
+    top: 200px;
+    left: 530px;
+    font-size: 2.5em;
+    opacity: 0.8;
+    color: rgb(27, 27, 27);
+}
+
+.close{
+    position: relative;
+    top: 0px;
+    left: 480px;
+    font-size: 2.5em;
+    opacity: 0.8;
+    color: rgb(27, 27, 27);
+}
     /* ************* Media Query ************ */
 
     /* ******* Media 1300px ******* */
