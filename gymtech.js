@@ -10,10 +10,14 @@ var btn = document.getElementById("btnResponsivo");
 var navLateral = document.getElementById("navLateral");
 var btnClass = document.getElementsByClassName('active');
 
-var img1 = document.getElementById("estruturaImg1")
-var img2 = document.getElementById("estruturaImg2")
-var img3 = document.getElementById("estruturaImg3")
-var img4 = document.getElementById("estruturaImg4")
+var img1 = document.getElementById("estruturaImg1");
+var img2 = document.getElementById("estruturaImg2");
+var img3 = document.getElementById("estruturaImg3");
+var img4 = document.getElementById("estruturaImg4");
+var btnClose = document.getElementById("close")
+var btnLeft = document.getElementById("left");
+var btnRight = document.getElementById("right");
+var imgGrande = document.getElementById("imagemGrande");
 
 
 btn.addEventListener("click",() => {
@@ -30,6 +34,37 @@ btn.addEventListener("click",() => {
         bodyContato.style.overflow = "scroll";
     }
 })
+
+    btnClose.addEventListener("click",() => {
+        imgGrande.style.display = "none";
+    })
+    
+    
+    img1.addEventListener("click",() => {
+        imgGrande.style.display = "block";
+        imgGrande.style.backgroundImage = "url(../onlineGym/imagens/local.png)";
+    })
+
+
+img2.addEventListener("click",() => {
+    imgGrande.style.display = "block";
+    imgGrande.style.backgroundImage = "url(../onlineGym/imagens/local.png)";
+})
+
+
+img3.addEventListener("click",() => {
+    imgGrande.style.display = "block";
+    imgGrande.style.backgroundImage = "url(../onlineGym/imagens/local.png)";
+})
+
+
+img4.addEventListener("click",() => {
+    imgGrande.style.display = "block";
+    imgGrande.style.backgroundImage = "url(../onlineGym/imagens/local.png)";
+})
+
+
+
 
 var staffMenu = document.getElementById("staffMenu").addEventListener("click",(event) => {
     document.getElementById("infoStaff").scrollIntoView({behavior:"smooth"});

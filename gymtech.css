@@ -457,7 +457,7 @@ figure iframe{
 
 #RmCenter{
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     border: solid  1px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.9);
     background-image: url(../onlineGym/imagens/local.png);
@@ -515,10 +515,10 @@ figure iframe{
 
 #nossoEspaco{
     width: 25vw;
-    height: 72vh;
+    height: 80vh;
     background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin-top: 3px;
+    margin-top: 8px;
     padding: 20px;
     border-radius: 20px;
 }
@@ -786,10 +786,17 @@ form input:focus::placeholder{
 
 #imagemGrande{
     display: none;
-    width: 80vw;
-    height: 60vh;
-    border: solid 1px red;
-    margin: -65px auto;
+    position: absolute;
+    top: 100px;
+    left: 205px;
+    width: 70vw;
+    height: 50vh;
+    border-radius: 20px;
+    background-image: url();
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-size: 70vw 50vh;
+    transition: 1s;
 }
 
 .left{
@@ -809,21 +816,23 @@ form input:focus::placeholder{
     font-size: 2.5em;
     opacity: 0.8;
     color: rgb(27, 27, 27);
+    cursor: pointer;
 }
 
 .close{
     position: relative;
-    top: 0px;
+    top: -50px;
     left: 480px;
     font-size: 2.5em;
     opacity: 0.8;
     color: rgb(27, 27, 27);
+    cursor: pointer;
 }
     /* ************* Media Query ************ */
 
     /* ******* Media 1300px ******* */
 
-    @media (max-width: 1300px){
+    @media (max-width: 1365px){
        body{
            background-color: royalblue;
            overflow-x: hidden;
@@ -845,6 +854,13 @@ form input:focus::placeholder{
     }
 
     /* sessao Lpo */
+
+    #imagemLpo{
+        height: 75vh;
+        background-image: url(../onlineGym/imagens/rm1.jpg);
+        background-size:720px 493px;
+        background-repeat: no-repeat;
+    }
 
     #sessaoLpo h1{
         font-size: 1.6em;
@@ -873,7 +889,7 @@ form input:focus::placeholder{
 
     #RmCenter{
         width: 100vw;
-        height:80vh;
+        height:100vh;
         border: solid  1px rgba(0, 0, 0, 0.1);
         background-color: rgba(0, 0, 0, 0.9);
         background-image: url(../onlineGym/imagens/local.png);
@@ -887,10 +903,10 @@ form input:focus::placeholder{
 
     #nossoEspaco{
         width: 25vw;
-        height: 68vh;
+        height: 85vh;
         background-color: rgba(0, 0, 0, 0.3);
         text-align: center;
-        margin-top: 20px;
+        margin-top: 25px;
         padding: 20px;
         border-radius: 20px;
     }
@@ -969,6 +985,12 @@ form input:focus::placeholder{
             height: 320px;
             
         }
+        #sessaoLpo{
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 101vw;
+            height: 75vh;
+            display: flex;
+        }
 
         #sessaoLpo h1{
             font-size: 1.3em;
@@ -979,12 +1001,8 @@ form input:focus::placeholder{
         }
 
         #imagemLpo{
-            width: 50vw;
-            height: 100vh;
-            background-image: url(../onlineGym/imagens/rm1.jpg);
-            background-size:720px 493px;
-            background-repeat: no-repeat;
-            background-position: -100px -0.7px;
+            width: 51vw;
+            height: 75vh;
         }
 
         #Mateus{
@@ -1026,6 +1044,10 @@ form input:focus::placeholder{
             margin: 50px 65px;
             width: 430px;
             height: 320px;           
+        }
+
+        #imagemLpo{
+            background-size: cover;
         }
 
         #sessaoLpo h1{
@@ -1145,6 +1167,12 @@ form input:focus::placeholder{
             height: 280px;            
         }
 
+        #sessaoLpo{
+            height: 83vh;
+
+        }
+        
+
         #sessaoLpo h1{
             font-size: 1.2em;
             margin: 30px  auto;
@@ -1231,7 +1259,7 @@ form input:focus::placeholder{
 
         #nossoEspaco{
             width: 32vw;
-            height: 70vh;
+            height: 85vh;
         }
 
         #nossoEspaco h1{
@@ -1256,6 +1284,25 @@ form input:focus::placeholder{
             left:2px;
             
         }
+        
+        #caixaHorario{
+            display: block;
+            text-align: center;
+        }
+
+        #horarioCross img{
+            width: 70vw;
+        }
+                
+        #horarioLpo img{
+            width:70vw;
+            margin-top: 50px;
+        }
+
+        footer{
+            margin-top: 400px;
+        }
+        
 
      }
 
@@ -1287,8 +1334,18 @@ form input:focus::placeholder{
             
         }
 
+        #sessaoLpo{
+            height: 83vh;
+        }
+
+        #imagemLpo{
+            background-image: url(../onlineGym/imagens/rm1.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+
         #sessaoLpo h1{
-            font-size: 1.2em;
+            font-size: 1em;
             margin: 30px  auto;
             width: 50%;
             text-align: center;
@@ -1340,7 +1397,8 @@ form input:focus::placeholder{
         }
         
         #sessaoLpo h4{
-            font-size: 0.7em;
+            width: 40vw;
+            font-size: 1em;
         }
 
         #imagemLpo{
@@ -1354,7 +1412,7 @@ form input:focus::placeholder{
 
         #nossoEspaco{
             width: 45vw;
-            height: 70vh;
+            height: 85vh;
         }
 
         #nossoEspaco h1{
@@ -1376,7 +1434,7 @@ form input:focus::placeholder{
             background-color:rgb(56, 167, 111);
             padding: 10px 8px;
             position: relative;
-            top:5px;
+            top:12px;
             left:2px;
             
         }
@@ -1447,6 +1505,15 @@ form input:focus::placeholder{
             height: 34vh;
     
         }
+
+        #horarioCross img{
+            width: 80vw;
+        }
+                
+        #horarioLpo img{
+            width:80vw;
+            margin-top: 50px;
+        }
         
      }
 
@@ -1498,6 +1565,111 @@ form input:focus::placeholder{
             background-image: url(../onlineGym/imagens/rm1.jpg);
             background-size:720px 493px;
             background-repeat: no-repeat;
+        }
+
+        #infoStaff{
+            height: 140vh;
+        
+        }
+
+        #Rose{
+            width: 80vw;
+            height: 60vh;
+            border-radius: 20px;
+            background-color: rgba(196, 195, 195, 0.041);
+            box-shadow: 20px 20px 50px rgb(0,0,0,0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            text-align: center;
+            background-image: url(../onlineGym/imagens/rosane-santos.jpg);
+            background-size:420px 420px;
+            opacity: 0.7; 
+            box-shadow: 10px 20px 50px 30px rgba(0, 0, 0, 0.9); 
+            background-position:-50px -25px;   
+            
+        }
+
+        #Rose .card{
+            height: 28vh;
+            text-align: center;
+            transform: translateY(250px);
+            transition: 0.5s;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            color: #fff;
+        }
+        #Rose .card{
+            height: 40vh;
+            text-align: center;
+            transform: translateY(250px);
+            transition: 0.5s;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            color: #fff;
+        }
+        
+
+        #Mateus{
+            width: 80vw;
+            height: 60vh;
+            border-radius: 20px;
+            background-color: rgba(196, 195, 195, 0.041);
+            box-shadow: 20px 20px 50px rgb(0,0,0,0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            text-align: center;
+            background-image: url(../onlineGym/imagens/mateus.jpg);
+            background-size: cover;
+            opacity: 0.7;   
+            box-shadow: 10px 20px 50px 30px rgba(0, 0, 0, 0.9);   
+            background-position: -50px 0px; 
+        }
+
+        #Mateus .card{
+            height:40vh;
+            text-align: center;
+            transform: translateY(250px);
+            transition: 0.5s;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            color: #fff;
+        }
+
+        #RmCenter{
+            width: 100vw;
+            height: 100vh;
+            border: solid  1px rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.9);
+            background-image: url(../onlineGym/imagens/local.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 520px 920px;
+            object-fit: fill;
+            background-position-y: -200px;
+            display: flex;    
+            justify-content: space-around;
+        }
+
+        #nossoEspaco{
+            width: 50vw;
+            height: 80vh;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-top: 8px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        #horarioCross img{
+            width: 95vw;
+        }
+                
+        #horarioLpo img{
+            width:95vw;
+            margin-top: 50px;
         }
      }
 
