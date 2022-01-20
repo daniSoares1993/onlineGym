@@ -958,7 +958,7 @@ form input:focus::placeholder{
         }
 
         #RmCenter{
-            background-size: 1330px 740px;
+            background-size: 1330px 760px;
             background-position-y: -100px;
             background-position-x: -140px;
         }
@@ -1022,9 +1022,9 @@ form input:focus::placeholder{
         }
 
         #RmCenter{
-            background-size: 1220px 740px;
+            background-size: 1330px 760px;
             background-position-y: -100px;
-            background-position-x: -130px;
+            background-position-x: -140px;
         }
 
      }
@@ -1041,13 +1041,9 @@ form input:focus::placeholder{
         }
 
         figure iframe{
-            margin: 50px 65px;
+            margin: 50px 80px;
             width: 430px;
             height: 320px;           
-        }
-
-        #imagemLpo{
-            background-size: cover;
         }
 
         #sessaoLpo h1{
@@ -1141,7 +1137,7 @@ form input:focus::placeholder{
         }
 
         #RmCenter{
-            background-size: 1100px 740px;
+            background-size: 1100px 760px;
             background-position-x:-60px;
         }
         
@@ -1187,13 +1183,13 @@ form input:focus::placeholder{
             width: 50vw;
             height: 100vh;
             background-image: url(../onlineGym/imagens/rm1.jpg);
-            background-size:720px 493px;
+            background-size:720px 545.5px;
             background-repeat: no-repeat;
             background-position: -140px -0.7px;
         }
 
         #RmCenter{
-            background-size: 900px 740px;
+            background-size: 900px 760px;
             background-position-x:-70px;
         }
 
@@ -1235,9 +1231,9 @@ form input:focus::placeholder{
             width: 50vw;
             height: 100vh;
             background-image: url(../onlineGym/imagens/rm1.jpg);
-            background-size:720px 493px;
+            background-size:720px 545.5px;
             background-repeat: no-repeat;
-            background-position: -160px -0.7px;
+            background-position: -140px -0.7px;
         }
 
         #Mateus{
@@ -1322,6 +1318,10 @@ form input:focus::placeholder{
             display: none;
         }
 
+       #bandeiraRm{
+           margin-left: -70px;
+       }
+
         #picture{
             background-position-x: -200px;
             background-size: 1040px 720px;
@@ -1335,13 +1335,16 @@ form input:focus::placeholder{
         }
 
         #sessaoLpo{
-            height: 83vh;
+            height: 75vh;
         }
 
         #imagemLpo{
+            width: 50vw;
+            height: 100vh;
             background-image: url(../onlineGym/imagens/rm1.jpg);
-            background-size:cover;
+            background-size:720px 800px;
             background-repeat: no-repeat;
+            background-position: -140px -0.7px;
         }
 
         #sessaoLpo h1{
@@ -1501,6 +1504,16 @@ form input:focus::placeholder{
             height: 34vh;
         }
 
+        #Mateus{
+            background-position: -60px -60px;
+        }
+
+        #Rose{
+           
+            background-position:-50px 0px;   
+            
+        }
+
         #Rose .card{
             height: 34vh;
     
@@ -1532,7 +1545,7 @@ form input:focus::placeholder{
         #sessaoLpo{
             background-color: rgba(0, 0, 0, 0.9);
             width: 100vw;
-            height: 100vh;
+            height: 110vh;
             display: block;
         }
         
@@ -1541,7 +1554,7 @@ form input:focus::placeholder{
         }
         
         #sessaoLpo h1{
-            width: 100vw;
+            width: 90vw;
             color: rgb(56, 167, 111);
             font-size: 1.4em;
             margin: 0px auto;
@@ -1550,9 +1563,10 @@ form input:focus::placeholder{
         }
         
         #sessaoLpo h4{
+            width: 100vw;
             margin: 0 auto;
-            padding: 20px;
-            font-size: 1em;
+            padding: 0px;
+            font-size: 0.9em;
             text-align: center;
             width: 95vw;
             height: 28vh;
@@ -1561,9 +1575,10 @@ form input:focus::placeholder{
         
         #imagemLpo{
             width: 100vw;
-            height: 55vh;
+            height: 73vh;
             background-image: url(../onlineGym/imagens/rm1.jpg);
             background-size:720px 493px;
+            background-position: center;
             background-repeat: no-repeat;
         }
 
@@ -1654,7 +1669,7 @@ form input:focus::placeholder{
         }
 
         #nossoEspaco{
-            width: 50vw;
+            width: 60vw;
             height: 80vh;
             background-color: rgba(0, 0, 0, 0.3);
             text-align: center;
@@ -1673,4 +1688,51 @@ form input:focus::placeholder{
         }
      }
 
+     @media (max-width: 321px){
+         #sessaoLpo{
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 100vw;
+            height: 140vh;
+            display: block;
+                   
+        }
+
+        #sessaoLpo h4{
+            width: 90vw;
+            height: 45vh;
+            margin-top: 25px;
+            margin-left: 12px;
+            font-size: 1em;
+        }
+
+        #imagemLpo{
+            margin-top: 73px;
+        }
+
+        #Mateus{
+            
+            background-position: -130px 0px; 
+        }
+
+        #Mateus .card{
+            height: 45vh;
+        }
+
+        #Rose .card{
+            height: 45vh;
+        }
+
+        #nossoEspaco{
+          width: 60vw;
+          height: 90vh;
+        }
+
+        #whatsApp{
+            position: relative;
+            top: 500px;
+        }
+
+      
+
+     }
      
