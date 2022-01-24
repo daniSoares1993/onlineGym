@@ -23,7 +23,8 @@ body{
 }
 
 #navLateral{
-    position: absolute;
+    position:absolute;
+    z-index: 0;
     display: block;
     top: 0px;
     left: 0px;
@@ -1687,6 +1688,10 @@ form input:focus::placeholder{
         }
      }
 
+     @media (max-width: 360px){
+         
+     }
+
      @media (max-width: 321px){
          #sessaoLpo{
             background-color: rgba(0, 0, 0, 0.9);
@@ -1735,6 +1740,8 @@ form input:focus::placeholder{
      }
      
      @media (max-height:900px){
+
+
 
         #picture{
             height: 68vh; 
@@ -1792,6 +1799,135 @@ form input:focus::placeholder{
         #Rose{
             background-position: -50px 0px;
             background-size: 420px 550px;
+        }
+
+     }
+
+     @media (max-height:750px){
+        #sessaoLpo{
+            height: 120vh;
+        }
+
+        #sessaoLpo figure{
+            margin-top: 100px;
+        }
+
+        #RmCenter{
+            height: 94vh;
+        }
+
+        #nossoEspaco{
+            height: 80vh;
+        }
+     }
+
+     @media (max-height:700px){
+         
+
+        #sessaoLpo{
+            height: 103vh;
+        }
+
+        #sessaoLpo h1{
+            padding-top: 20px;
+        }
+        #sessaoLpo h4{
+            height: 22vh;
+           margin-top: 30px;
+        }
+
+        #RmCenter{
+            height: 94vh;
+        }
+
+        #nossoEspaco{
+            height: 80vh;
+        }
+
+        #nossoEspaco p{
+            margin-top: 40px;
+        }
+
+        .vejaMais{
+            position: relative;
+            top: 40px;
+        }            
+     }
+
+     @media (max-height:670px){
+        #sessaoLpo{
+            height: 125vh;
+        }
+
+     }
+
+     @media (max-height:600px){
+        #whatsApp{
+            position:fixed;
+            left: 0px;
+            top: 500px;
+        }
+
+        #staff main h1{
+            margin-top: 100px;
+        }
+
+        #Mateus{
+            background-position: -20px 0px;
+        }
+        #Rose{
+            background-position: -20px 0px;
+            background-size: 360px 450px;
+        }
+        #RmCenter{
+            height: 100vh;
+        }
+
+        #nossoEspaco{
+            height: 90vh;
+            margin-top: 8px;
+        }
+
+     }
+
+     @media (max-height:570px){
+
+        #sessaoLpo{
+            height: 140vh;
+        }
+
+        #sessaoLpo figure{
+            margin-top: 170px;
+        }
+
+        #staff main h1{
+            margin-top: 70px;
+        }
+
+        #Mateus .card{
+            height: 50vh;
+        }
+
+        #Mateus:hover .card{
+            transform: translateY(50px);
+        }
+
+        #Rose .card{
+            height: 50vh;
+            
+        }
+
+        #Rose:hover .card{
+            transform: translateY(50px);
+        }
+
+        #RmCenter{
+            height: 110vh;
+        }
+
+        #nossoEspaco{
+            height: 98vh;
+            margin-top: 8px;
         }
 
      }
