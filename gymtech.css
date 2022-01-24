@@ -1769,7 +1769,29 @@ form input:focus::placeholder{
         .vejaMais{
             position: relative;
             top: 60px;
+        }        
+     }
+
+     @media (max-height:850px){
+        #sessaoLpo{
+            height: 100vh;
         }
 
-        
+        #sessaoLpo h1{
+            padding-top: 60px;
+        }
+        #sessaoLpo h4{
+            height: 18vh;
+           margin-top: 50px;
+        }
+
+        #Mateus{
+            background-position: -170px 0px;
+        }
+
+        #Rose{
+            background-position: -50px 0px;
+            background-size: 420px 550px;
+        }
+
      }
