@@ -853,7 +853,7 @@ form input:focus::placeholder{
         
     }
 
-    /* sessao Lpo */
+    /* sessaoLpo{ Lpo */
 
     #imagemLpo{
         height: 75vh;
@@ -870,7 +870,7 @@ form input:focus::placeholder{
         font-size: 1.2em;
     }
 
-    /* sessao de cards */
+    /* sessaoLpo{ de cards */
 
     #Mateus{
         background-position-x: -35px;  
@@ -1191,10 +1191,9 @@ form input:focus::placeholder{
         #RmCenter{
             background-size: 900px 760px;
             background-position-x:-70px;
-        }
-
-       
+        }       
      }
+
      
 
      /* ******* Media 760px ******* */
@@ -1732,7 +1731,45 @@ form input:focus::placeholder{
             top: 500px;
         }
 
-      
 
      }
      
+     @media (max-height:900px){
+
+        #picture{
+            height: 68vh; 
+        }
+       
+        #sessaoLpo{
+            height: 94vh;
+        }
+
+        #Rose{
+            background-position-x: -180px;
+            background-position-y: 0px;     
+        }
+
+        #RmCenter{
+            height: 83vh;
+            background-attachment:scroll;
+            background-size: 614px 982px;
+            background-position-y: -180px;
+        }
+
+        #nossoEspaco{
+            width: 60vw;
+            height: 70vh;
+            margin-top: 35px;
+        }
+
+        #nossoEspaco p{
+            margin-top: 40px;
+        }
+
+        .vejaMais{
+            position: relative;
+            top: 60px;
+        }
+
+        
+     }
