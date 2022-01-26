@@ -845,6 +845,7 @@ form input:focus::placeholder{
            overflow-x: hidden;
            max-height: 890px;
            min-height: 570px;
+           
        }
 
        #picture{

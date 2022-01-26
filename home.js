@@ -2,9 +2,14 @@ VanillaTilt.init(document.querySelectorAll("#Mateus"));
 VanillaTilt.init(document.querySelectorAll("#Rose"));
 VanillaTilt.init(document.querySelectorAll("#horarioLpo"));
 VanillaTilt.init(document.querySelectorAll("#horarioCross"));
-
+var cardMateus = document.getElementById("Mateus");
+var cardRose = document.getElementById("Rose");
 var bodyHome = document.getElementById("home");
-var bodyContato = document.getElementById("contatoRm")
+var vejaMais =  document.getElementById("vejaM");
+var horarioCross = document.getElementById("horarioCross");
+var horarioLpo  = document.getElementById("horarioLpo");
+
+
 
 var btn = document.getElementById("btnResponsivo");
 var navLateral = document.getElementById("navLateral");
@@ -17,12 +22,22 @@ btn.addEventListener("click",() => {
     if( navLateral.style.display != "block"){
         navLateral.style.display = "block";
         bodyHome.style.overflow = "hidden";
-        bodyContato.style.overflow = "hiddden";
+        cardMateus.style.visibility = "hidden";
+        cardRose.style.visibility = "hidden";
+        vejaMais.style.visibility = "hidden";
+        horarioCross.style.visibility  = "hidden";
+        horarioLpo.style.visibility = "hidden";
 
     } else if(navLateral.style.display === "block"){
         navLateral.style.display = "none";
         bodyHome.style.overflowY = "scroll";
-        bodyContato.style.overflow = "scroll";
+        cardMateus.style.visibility = "visible";
+        cardRose.style.visibility = "visible";
+        vejaMais.style.visibility = "visible";
+        horarioCross.style.visibility  = "visible";
+        horarioLpo.style.visibility = "visible";
+        
+    
     }
 })
 
