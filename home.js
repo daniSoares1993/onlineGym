@@ -10,15 +10,6 @@ var btn = document.getElementById("btnResponsivo");
 var navLateral = document.getElementById("navLateral");
 var btnClass = document.getElementsByClassName('active');
 
-var img1 = document.getElementById("estruturaImg1");
-var img2 = document.getElementById("estruturaImg2");
-var img3 = document.getElementById("estruturaImg3");
-var img4 = document.getElementById("estruturaImg4");
-var btnClose = document.getElementById("close")
-var btnLeft = document.getElementById("left");
-var btnRight = document.getElementById("right");
-var imgGrande = document.getElementById("imagemGrande");
-
 
 btn.addEventListener("click",() => {
     btn.classList.toggle('active');
