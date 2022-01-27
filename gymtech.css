@@ -745,6 +745,10 @@ form input:focus::placeholder{
 }
 
 /****** Galeria de fotos *******/
+
+#nossaEstrutura {
+    overflow-y: hidden;
+}
 #nossaEstrutura footer{
     position: absolute;
     top: 618px;
@@ -780,12 +784,12 @@ form input:focus::placeholder{
 
 #galeriaImagens img:hover{
 
+    box-shadow: 15px 30px 20px rgba(0, 0, 0, 0.9);
     transition: 1s;
     opacity: 1;
 }
 
 #imagemGrande{
-    border: solid 1px red;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
     position: absolute;
@@ -796,8 +800,8 @@ form input:focus::placeholder{
     background-image: url();
     background-position: 240px  250px;
     background-repeat: no-repeat;
-    background-size: 65vw 50vh;
-    object-fit: fill;
+    background-size: 45% 18%;
+    object-fit:fill;
     transition: 1s;
 }
 
@@ -831,9 +835,6 @@ form input:focus::placeholder{
     cursor: pointer;
 }
 
-#nossaEstrutura{
-    overflow: visible;
-}
     /* ************* Media Query ************ */
 
     /* ******* Media 1300px ******* */
