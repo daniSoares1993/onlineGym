@@ -11,6 +11,7 @@ var horarioLpo  = document.getElementById("horarioLpo");
 
 
 
+
 var btn = document.getElementById("btnResponsivo");
 var navLateral = document.getElementById("navLateral");
 var btnClass = document.getElementsByClassName('active');
@@ -27,6 +28,7 @@ btn.addEventListener("click",() => {
         vejaMais.style.visibility = "hidden";
         horarioCross.style.visibility  = "hidden";
         horarioLpo.style.visibility = "hidden";
+        
 
     } else if(navLateral.style.display === "block"){
         navLateral.style.display = "none";
