@@ -638,14 +638,17 @@ footer p{
 
     #bodyMateus{
         background-color:rgb(190, 189, 189);
-        overflow:scroll;
+        overflow-y: scroll;
+        overflow-x: scroll;
     }
 
     #topoMateus{
         background-color:rgb(56, 167, 111);
-        height: 220px;
+        height: 250px;
+        margin-top: 0px;
         display: flex;
         justify-content: space-between;
+        z-index: 1;
     }
 
     #topoMateusLeft{
@@ -658,7 +661,7 @@ footer p{
         font-size: 2em;
         text-transform: uppercase;
         font-weight: 500;
-        margin: 50px auto;
+        margin: 100px auto;
     }
 
     .esquerda{
@@ -672,9 +675,9 @@ footer p{
     #topoMateusCenter img{
         border: solid 6px rgb(190, 189, 189) ;
         width: 100%;
-        height: 100%;
+        height: 110%;
         border-radius:150px 150px;
-        margin-top: 120px;
+        margin-top: 100px;
         margin-left:-5px;
     }
 
@@ -688,28 +691,237 @@ footer p{
         font-size: 2em;
         text-transform: uppercase;
         font-weight: 500;
-        margin: 50px auto;
+        margin: 100px auto;
     }
 
     #biografiaMateus{
-        border: solid 1px red;
-        margin: 130px auto;
+
+        margin: 210px auto;
         width: 80%;
-        height: 420px;
+        height: 620px;
+    }
+
+    #biografiaMateus h1{
+        color:rgb(56, 167, 111);
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+        font-size: 2em;
+        font-weight: 500;
+        font-style: italic;
+        padding: 10px;
+        opacity: 0.7;
+    }
+
+    #biografiaMateus p{
+        color: rgb(0,0,0);
+        font-weight: 500;
+        padding: 10px;
+        font-size: 1.2em;
+        letter-spacing: -0.5px;
+    }
+
+    .maisInfo{
+        color:rgb(56, 167, 111);
     }
 
     #curiosidadesSobre{
+        margin-top: 20px;
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
     }
 
-    #curiosidadesSobre div{
-        width: 33%;
-        height: 20%;
+    .hr{
+        color: rgb(145, 143, 143);
+        margin-top: 10px;
     }
 
+    #curiosidadesSobre div{
+        border-right:  solid 2px rgb(145, 143, 143,0.5);
+        border-bottom:  solid 2px rgb(145, 143, 143,0.5);
+        margin-top: 10px;
+        width: 33%;
+        height: 200px;
+    }
+
+    .centralizar{
+        text-align: center;
+    }
+
+    #curiosidadesSobre div h2{
+        color:rgb(56, 167, 111);
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+        font-size: 1.1em;
+        font-style: italic;
+        padding: 5px;
+        opacity: 0.9;
+    }
+
+    #curiosidadesSobre div p{
+        margin-top: 10px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-style: italic;
+
+    }
+
+
+    #curiosidadesSobre div img{
+        width: 40%;
+        height: 35%;
+        border-radius: 20px;
+    }
+
+    #curiosidadesSobre div i{
+        font-size: 4em;
+    }
+
+/************ pagina rose ***********/
+#bioRose{
+    background-color:rgb(190, 189, 189);
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+#topoRose{
+    background-color:rgb(56, 167, 111);
+    height: 250px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#topoRoseLeft{
+    width: 33%;
+    text-align: center;
+}
+
+#topoRoseLeft h1{
+    width: 40%;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 100px auto;
+}
+
+.esquerda{
+    text-align: left;
+}
+
+#topoRoseCenter{
+    width: 33%;
+}
+
+#topoRoseCenter img{
+    border: solid 6px rgb(190, 189, 189) ;
+    width: 100%;
+    height: 110%;
+    border-radius:150px 150px;
+    margin-top: 100px;
+    margin-left:-5px;
+}
+
+#topoRoseRight{
+    width: 33%;
+    text-align: center;
+}
+
+#topoRoseRight h1{
+    width: 80%;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 100px auto;
+}
+
+#biografiaRose{
+
+    margin: 210px auto;
+    width: 80%;
+    height: 620px;
+}
+
+#biografiaRose h1{
+    color:rgb(56, 167, 111);
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    font-size: 2em;
+    font-weight: 500;
+    font-style: italic;
+    padding: 10px;
+    opacity: 0.7;
+}
+
+#biografiaRose p{
+    color: rgb(0,0,0);
+    font-weight: 500;
+    padding: 10px;
+    font-size: 1.2em;
+    letter-spacing: -0.5px;
+}
+
+.maisInfo{
+    color:rgb(56, 167, 111);
+}
+
+#curiosidadesSobre{
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.hr{
+    color: rgb(145, 143, 143);
+    margin-top: 10px;
+}
+
+#curiosidadesSobre div{
+    border-right:  solid 2px rgb(145, 143, 143,0.5);
+    border-bottom:  solid 2px rgb(145, 143, 143,0.5);
+    margin-top: 10px;
+    width: 33%;
+    height: 200px;
+}
+
+.centralizar{
+    text-align: center;
+}
+
+#curiosidadesSobre div h2{
+    color:rgb(56, 167, 111);
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    font-size: 1.1em;
+    font-style: italic;
+    padding: 5px;
+    opacity: 0.9;
+}
+
+#curiosidadesSobre div p{
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-style: italic;
+
+}
+
+
+#curiosidadesSobre div img{
+    width: 40%;
+    height: 35%;
+    border-radius: 20px;
+}
+
+#curiosidadesSobre div i{
+    font-size: 4em;
+}
 
 /****** Galeria de fotos *******/
 
@@ -803,6 +1015,8 @@ footer p{
     color: rgb(224, 222, 222);
     cursor: pointer;
 }
+
+
 
 /****** pagina de contato **********/
 #backgroundContato{
