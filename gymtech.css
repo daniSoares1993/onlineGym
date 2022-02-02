@@ -735,9 +735,10 @@ footer p{
         color:rgb(56, 167, 111);
     }
 
-    #curiosidadesSobre{
+    #bodyMateus #curiosidadesSobre{
         margin-top: 20px;
-        height: 100%;
+        width: 100%;
+        height: 420px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -749,12 +750,12 @@ footer p{
         margin-top: 10px;
     }
 
-    #curiosidadesSobre div{
+    #bodyMateus #curiosidadesSobre div{
         border-right:  solid 2px rgb(145, 143, 143,0.5);
         border-bottom:  solid 2px rgb(145, 143, 143,0.5);
         margin-top: 10px;
         width: 33%;
-        height: 200px;
+        height: 50%;
     }
 
     .centralizar{
@@ -1906,6 +1907,13 @@ form input:focus::placeholder{
             margin-left: 30px;
         }
 
+        #bodyMateus #curiosidadesSobre div{
+            border: none;
+            padding: 5px;
+            width: 33%;
+            height: 50%;
+        }
+
 
      }
 
@@ -2251,7 +2259,7 @@ form input:focus::placeholder{
             height: 110%;
             border-radius:150px 150px;
             margin-top: 300px;
-            margin-left: 0%;
+            margin-left: -10%;
         }
 
         
@@ -2281,13 +2289,15 @@ form input:focus::placeholder{
             padding: 20px;
             border-radius: 20px;
         }
+
+        
      }
 
 
       /* ******* Media 400px ******* */
 
       @media (max-width: 400px){
-        #nossaEstrutura,body{
+        #bodyMateus,#nossaEstrutura,body{
             background-color:rgb(164, 173, 110);
         }
 
@@ -2440,10 +2450,41 @@ form input:focus::placeholder{
             width:95vw;
             margin-top: 50px;
         }
+
+        #topoMateusLeft h1{
+            width: 40%;
+            font-size: 1.7em;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: 0px auto;
+        }
+
+        #topoMateusRight h1{
+            font-size: 1.7em;
+        }
+
+        #topoMateusRight .movimento{
+            font-size: 0.5em;
+        }
+
+        #topoMateusCenter img{
+        
+            margin-left: -20%;
+        }
+
+
+     
      }
 
-     @media (max-width: 360px){
-         
+     @media (max-width: 375px){
+        #topoMateusRight h1{
+            font-size: 1.6em;
+            margin-left: -30px;
+        }
+
+        #curiosidadesSobre {
+            margin-left: -20px;
+        }
      }
 
      @media (max-width: 321px){
@@ -2490,6 +2531,30 @@ form input:focus::placeholder{
             top: 500px;
         }
 
+        #topoMateus{
+            width: 350px;
+        }
+        #topoMateusLeft h1{
+            font-size: 1.5em;
+            margin-left: 45px;
+        }
+
+        #topoMateusCenter img{
+            min-width: 260px;
+            height: 110%;
+            border-radius:150px 150px;
+            margin-top: 300px;
+            margin-left: -20%;
+        }
+
+        #topoMateusRight h1{
+            font-size: 1.5em;
+            margin-left: -22px;
+        }
+
+        #bodyMateus header{
+            width: 350px;
+        }
 
      }
     
