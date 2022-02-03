@@ -666,6 +666,19 @@ footer p{
         text-align: center;
     }
 
+    #topoMateusSetaEsquerda{
+        font-size: 2em;
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        top: 35%;
+        left: 25%;
+    }
+
+    #topoMateusSetaEsquerda a{
+        color: rgba(0, 0, 0, 0.7);
+    }
+
     #topoMateusLeft h1{
         width: 40%;
         font-size: 2em;
@@ -694,6 +707,19 @@ footer p{
     #topoMateusRight{
         width: 33%;
         text-align: center;
+    }
+
+    #topoMateusSetaDireita{
+        font-size: 2em;
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        top: 35%;
+        left: 70%;
+    }
+
+    #topoMateusSetaDireita a{
+        color: rgba(0, 0, 0, 0.7);
     }
 
     #topoMateusRight h1{
@@ -1393,7 +1419,7 @@ form input:focus::placeholder{
      /* ******* Media 1100px ******* */
 
      @media (max-width: 1100px){
-        #bodyMateus,#contatoRm,#nossaEstrutura,body{
+        #bioRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
             background-color: yellow;
         }
 
@@ -1631,6 +1657,14 @@ form input:focus::placeholder{
             margin-left: -10%;
         }
         
+        #topoMateusSetaEsquerda{
+            left: 22%;
+        }
+
+        #topoMateusSetaDireita{
+           
+            left: 75%;
+        }
      }
 
      /* ******* Media 840px ******* */
@@ -1710,7 +1744,7 @@ form input:focus::placeholder{
      /* ******* Media 760px ******* */
 
      @media (max-width: 760px){
-       #bodyMateus,#contatoRm,body{
+        #bioRose,#bodyMateus,#contatoRm,body{
             background-color:rgb(128, 0, 49);
             
         }
@@ -1914,13 +1948,42 @@ form input:focus::placeholder{
             height: 50%;
         }
 
+        #topoMateusSetaEsquerda{
+            left: 14%;
+        }
+
+
+        #topoMateusSetaDireita{
+           
+            left: 78%;
+        }
+
+        #topoRoseCenter img{
+            border: solid 6px rgb(190, 189, 189) ;
+            width: 100%;
+            height: 100%;
+            border-radius:150px 150px;
+            margin-top: 130px;
+            margin-left:-5px;
+        }
+
+        #topoRoseRight h1{
+            width: 80%;
+            font-size: 1.8em;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: 100px auto;
+        }
+        
+
+       
 
      }
 
       /* ******* Media 680px ******* */
 
       @media (max-width: 680px){
-      #bodyMateus,#nossaEstrutura,body{
+        #bioRose,#bodyMateus,#nossaEstrutura,body{
             background-color:rgb(38, 0, 128);
         }
 
@@ -2059,6 +2122,34 @@ form input:focus::placeholder{
             width: 30%;
             margin-left: 30px;
         }
+
+        #topoMateusSetaEsquerda{
+            left: 8%;
+        }
+
+        #topoMateusSetaDireita{
+           
+            left: 79%;
+        }
+
+        #topoRoseCenter img{
+            border: solid 6px rgb(190, 189, 189) ;
+            width: 100%;
+            height: 80%;
+            border-radius:150px 150px;
+            margin-top: 150px;
+            margin-left:-5px;
+        }
+
+       
+
+        #topoRoseRight h1{
+            width: 80%;
+            font-size: 1.6em;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: 100px auto;
+        }
         
 
      }
@@ -2066,7 +2157,7 @@ form input:focus::placeholder{
       /* ******* Media 600px ******* */
 
       @media (max-width: 600px){
-        #bodyMateus,#contatoRm,#nossaEstrutura,body{
+        #bioRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
             background-color:rgb(7, 160, 180);
            
         }
@@ -2152,6 +2243,28 @@ form input:focus::placeholder{
             display: flex;
         }
         
+        #topoMateusSetaEsquerda{
+            left:6%;
+        }
+
+        #topoMateusSetaDireita{
+           
+            left: 85%;
+        }
+
+        #topoRoseRight h1{
+            
+            font-size: 1.4em;
+        }
+
+
+        #topoRoseLeft h1{
+            width: 40%;
+            font-size: 1.8em;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: 100px auto;
+        }
 
     
      }
@@ -2159,7 +2272,7 @@ form input:focus::placeholder{
       /* ******* Media 500px ******* */
 
       @media (max-width: 500px){
-        #bodyMateus,#nossaEstrutura,body{
+        #bioRose,#bodyMateus,#nossaEstrutura,body{
             background-color:rgb(180, 7, 7);
         }
 
@@ -2262,6 +2375,31 @@ form input:focus::placeholder{
             margin-left: -10%;
         }
 
+        #topoMateusSetaEsquerda{
+            left:0%;
+        }
+
+        #topoMateusSetaDireita{
+           
+            left: 79%;
+        }
+        #topoRoseLeft h1{
+            margin-left: 13%;
+        }
+
+        #topoRoseRight h1{
+            margin-left: -8%;
+            font-size: 1.3em;
+        }
+
+        #topoRoseCenter img{
+            width: 110%;
+            height: 70%;
+            border-radius:150px 150px;
+            margin-top: 160px;
+            margin-left:-15px;
+        }
+
         
         
      }
@@ -2290,6 +2428,16 @@ form input:focus::placeholder{
             border-radius: 20px;
         }
 
+        #topoMateusSetaEsquerda{
+            left:0%;
+        }
+
+        #topoMateusSetaDireita{
+           
+            left: 83%;
+        }
+
+
         
      }
 
@@ -2297,7 +2445,7 @@ form input:focus::placeholder{
       /* ******* Media 400px ******* */
 
       @media (max-width: 400px){
-        #bodyMateus,#nossaEstrutura,body{
+        #bioRose,#bodyMateus,#nossaEstrutura,body{
             background-color:rgb(164, 173, 110);
         }
 
@@ -2472,8 +2620,23 @@ form input:focus::placeholder{
             margin-left: -20%;
         }
 
+        #topoMateusSetaEsquerda{
+            top: 65%;
+            left:-3%;
+        }
 
-     
+        #topoMateusSetaDireita{
+            top: 65%;
+            left: 85%;
+        }
+        
+        #topoRoseCenter img{
+            width: 110%;
+            height: 6   0%;
+            border-radius:150px 150px;
+            margin-top: 160px;
+            margin-left:-15px;
+        }     
      }
 
      @media (max-width: 375px){
@@ -2484,6 +2647,27 @@ form input:focus::placeholder{
 
         #curiosidadesSobre {
             margin-left: -20px;
+        }
+
+        #topoRose{
+            width: 105%;
+        }
+
+        #topoRoseCenter img{
+            width: 120%;
+            height: 60%;
+            border-radius:150px 150px;
+            margin-top: 160px;
+            margin-left:-30px;
+        }
+
+        #topoRoseLeft h1{
+            font-size: 1.5em;
+        }
+
+        #topoRoseRight h1{
+            margin-left: -10%;
+            font-size: 1em;
         }
      }
 
