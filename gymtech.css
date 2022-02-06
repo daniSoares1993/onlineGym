@@ -11,6 +11,7 @@ body{
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color:#fff;
 }
 
         /* ********** inicio cabeçalho  ********** */
@@ -637,7 +638,7 @@ footer p{
 /************* pagina Mateus ************** */
 
     #bodyMateus{
-        background-color:rgb(190, 189, 189);
+        background-color:#fff;
         overflow-y: scroll;
     }
 
@@ -820,7 +821,7 @@ footer p{
 
 /************ pagina rose ***********/
 #bodyRose{
-    background-color:rgb(190, 189, 189);
+    background-color:#fff);
     overflow-y: scroll;
     overflow-x: scroll;
 }
@@ -1006,7 +1007,7 @@ footer p{
 
 #nossaEstrutura {
     overflow-y: hidden;
-   background-color:  rgb(190, 189, 189);
+   background-color:  #fff;
 }
 #nossaEstrutura footer{
     position: absolute;
@@ -1021,6 +1022,17 @@ footer p{
     top: 120px;
     text-align: center;
 
+}
+
+#estruturaFotos h1{
+    text-transform: uppercase;
+    font-style: italic;
+    color:rgba(36, 36, 36, 0.7);
+    letter-spacing: -1px;
+}
+
+#estruturaFotos .hrcross{
+    background-color:color:rgba(36, 36, 36, 0.7);
 }
 
 #galeriaImagens{
@@ -1098,15 +1110,20 @@ footer p{
 
 
 /****** pagina de contato **********/
-#backgroundContato{
-    background-color:  rgb(56, 167, 111);
-    height: 360px;
-    width: 100vw;
-    position: relative;
-    top: 120px;
-    display: flex;
-   
+
+#contatoRm {
+    background-color: #fff;
+    overflow: hidden;
 }
+    #backgroundContato{
+        background-color:  rgb(56, 167, 111);
+        height: 360px;
+        width: 100vw;
+        position: relative;
+        top: 120px;
+        display: flex;
+    
+    }
 
 #backgroundContato div{
     margin-left: 100px;
@@ -1149,10 +1166,7 @@ footer p{
 #backgroundContato iframe{
     border-radius: 20px;
 }
-#contatoRm{
-    background-color:rgb(190, 189, 189);
-    overflow: hidden;
-}
+
 
 #contato{
     border: solid 1px rgb(172, 172, 172,0.4) ;
@@ -1218,16 +1232,11 @@ form input:focus::placeholder{
 
     @media (max-width: 1365px){
        #contatoRm,body{
-           background-color: royalblue;
            overflow-x: hidden;
-           /*max-height: 890px;
-           min-height: 570px;
-           */
            
        }
 
        #nossaEstrutura,body{
-        background-color: royalblue;
         overflow-y: visible;
        }
 
@@ -1311,7 +1320,6 @@ form input:focus::placeholder{
         }
 
         #estruturaFotos{
-            border: solid 1px red;
             width: 100%;
             height: 440px;
             margin-top: -1px;
@@ -1323,7 +1331,7 @@ form input:focus::placeholder{
         }
 
         #galeriaImagens{
-            margin-top: 60px;
+            margin-top: 20px;
         }
         
         #galeriaImagens img{
@@ -1343,18 +1351,19 @@ form input:focus::placeholder{
             top: -200px;
             left: 0px;
             width: 100%;
-            height: 100%;
-            background-position: 54%  14%;
+            height: 160%;
+            background-position: 54%  54%;
             background-repeat: no-repeat;
-            background-size: 60% 25%;
+            background-size: 70% 45%;
             object-fit:fill;
             transition: 1s;
         }
 
+
         .left{
             position: relative;
             top: 460px;
-            left: -33.5%;
+            left: -34.5%;
             font-size: 2.5em;
             opacity: 0.8;
             color: rgb(224, 222, 222);
@@ -1373,7 +1382,7 @@ form input:focus::placeholder{
         
         .close{
             position: relative;
-            top: 5%;
+            top: 15%;
             left: 37%;
             font-size: 2.5em;
             opacity: 0.8;
@@ -1397,9 +1406,6 @@ form input:focus::placeholder{
     /* ******* Media 1200px ******* */
 
     @media (max-width: 1200px){
-        #contatoRm,#nossaEstrutura,body{
-            background-color: green;
-        }
 
         #picture{
             background-position-x: -150px;
@@ -1446,9 +1452,16 @@ form input:focus::placeholder{
         }
 
         #imagemGrande{
-            background-position: 54%  18%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display:none;
+            position: absolute;
+            top: -200px;
+            left: 0px;
+            width: 100%;
+            height: 160%;
+            background-position: 54%  54%;
             background-repeat: no-repeat;
-            background-size: 60% 25%;
+            background-size: 70% 45%;
             object-fit:fill;
             transition: 1s;
         }
@@ -1467,9 +1480,6 @@ form input:focus::placeholder{
      /* ******* Media 1100px ******* */
 
      @media (max-width: 1100px){
-        #bodyRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
-            background-color: yellow;
-        }
 
         #picture{
             background-position-x: -200px;
@@ -1524,7 +1534,18 @@ form input:focus::placeholder{
         }
 
         #imagemGrande{
-            background-position: 54%  20%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display:none;
+            position: absolute;
+            top: -200px;
+            left: 0px;
+            width: 100%;
+            height: 160%;
+            background-position: 54%  54%;
+            background-repeat: no-repeat;
+            background-size: 70% 45%;
+            object-fit:fill;
+            transition: 1s;
         }
 
         #contato{
@@ -1555,7 +1576,6 @@ form input:focus::placeholder{
 
      @media (max-width: 1000px){
         #bodyRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
-            background-color: orange;
             overflow-y: scroll;
         }
 
@@ -1665,7 +1685,18 @@ form input:focus::placeholder{
         }
 
         #imagemGrande{
-            background-position: 54%  24%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display:none;
+            position: absolute;
+            top: -200px;
+            left: 0px;
+            width: 100%;
+            height: 160%;
+            background-position: 54%  54%;
+            background-repeat: no-repeat;
+            background-size: 70% 45%;
+            object-fit:fill;
+            transition: 1s;
         }
 
         /* ******************* contato **************/
@@ -1744,9 +1775,7 @@ form input:focus::placeholder{
      /* ******* Media 840px ******* */
 
      @media (max-width: 840px){
-        #bodyRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
-            background-color:purple;
-        }
+        
 
         #picture{
             background-position-x: -220px;
@@ -1791,7 +1820,18 @@ form input:focus::placeholder{
         }    
         
         #imagemGrande{
-            background-position: 54%  30%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display:none;
+            position: absolute;
+            top: -200px;
+            left: 0px;
+            width: 100%;
+            height: 160%;
+            background-position: 54%  54%;
+            background-repeat: no-repeat;
+            background-size: 70% 45%;
+            object-fit:fill;
+            transition: 1s;
         }
 
         #backgroundContato{
@@ -1831,12 +1871,7 @@ form input:focus::placeholder{
      /* ******* Media 760px ******* */
 
      @media (max-width: 760px){
-        #bodyRose,#bodyMateus,#contatoRm,body{
-            background-color:rgb(128, 0, 49);
-            
-        }
         #nossaEstrutura{
-            background-color:rgb(128, 0, 49);
             overflow-y: scroll;
             height: 1050px;
         }
@@ -1960,8 +1995,18 @@ form input:focus::placeholder{
         }
 
         #imagemGrande{
-            background-position: 54%  50%;
-            background-size: 75% 30%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display:none;
+            position: absolute;
+            top: -200px;
+            left: 0px;
+            width: 100%;
+            height: 160%;
+            background-position: 54%  25%;
+            background-repeat: no-repeat;
+            background-size: 65% 30%;
+            object-fit:fill;
+            transition: 1s;
         }
 
         .left{
@@ -1986,7 +2031,7 @@ form input:focus::placeholder{
         
         .close{
             position: relative;
-            top: 15%;
+            top: 12%;
             left: 37%;
             font-size: 2.5em;
             opacity: 0.8;
@@ -2080,20 +2125,13 @@ form input:focus::placeholder{
            
             left: 78%;
         }
-
-        
-        
-
-       
+     
 
      }
 
       /* ******* Media 680px ******* */
 
       @media (max-width: 680px){
-        #bodyRose,#bodyMateus,#nossaEstrutura,body{
-            background-color:rgb(38, 0, 128);
-        }
 
         #contatoRm{
             background-color:rgb(56, 167, 111) ;
@@ -2115,6 +2153,15 @@ form input:focus::placeholder{
        #bandeiraRm{
            margin-left: -70px;
        }
+
+       #contatoRm #navBar ul li a img{
+        width: 100px;
+        height:90px;
+        object-fit: fill;
+        border-radius: 20px;
+        padding-top: 10px;
+        margin-left: -10px;
+    }
 
         #picture{
             background-position-x: -200px;
@@ -2280,10 +2327,6 @@ form input:focus::placeholder{
       /* ******* Media 600px ******* */
 
       @media (max-width: 600px){
-        #bodyRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
-            background-color:rgb(7, 160, 180);
-           
-        }
 
         #picture{
             background-position-x: -200px;
@@ -2405,15 +2448,17 @@ form input:focus::placeholder{
             left: 85%;
         }
 
+        #backgroundContato{
+        width: 110%;
+       }
+       
+
     
      }
 
       /* ******* Media 500px ******* */
 
       @media (max-width: 500px){
-        #bodyRose,#bodyMateus,#nossaEstrutura,body{
-            background-color:rgb(180, 7, 7);
-        }
 
         #picture{
             background-position-x: -200px;
@@ -2515,11 +2560,13 @@ form input:focus::placeholder{
         }
 
         #topoMateusSetaEsquerda{
+            top: 50%;
             left:0%;
+
         }
 
         #topoMateusSetaDireita{
-           
+            top: 50%;
             left: 79%;
         }
 
@@ -2572,6 +2619,8 @@ form input:focus::placeholder{
             padding-top: 10px;
             margin-left: 10px;
         }
+
+        
        
 
         
@@ -2625,9 +2674,7 @@ form input:focus::placeholder{
      }
 
      @media (max-width: 414px){
-        #bodyRose,body{
-            background-color:rgb(173, 110, 147);
-        }
+    
         #bodyRose header{
             width: 103%;
         }
@@ -2653,9 +2700,6 @@ form input:focus::placeholder{
       /* ******* Media 400px ******* */
 
       @media (max-width: 400px){
-        #bodyRose,#bodyMateus,#nossaEstrutura,body{
-            background-color:rgb(164, 173, 110);
-        }
 
         figure iframe{
             margin: 50px -10px;
