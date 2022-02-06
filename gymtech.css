@@ -819,7 +819,7 @@ footer p{
     }
 
 /************ pagina rose ***********/
-#bioRose{
+#bodyRose{
     background-color:rgb(190, 189, 189);
     overflow-y: scroll;
     overflow-x: scroll;
@@ -832,6 +832,17 @@ footer p{
     display: flex;
     justify-content: space-between;
     z-index: 1;
+    align-items: center;
+}
+
+#topoRose h1{
+    font-style: italic;
+    color: rgb(0,0,0,0.6);
+}
+
+.movimento{
+   font-size: 0.5em;
+   color:rgb(0,0,0,0.6);
 }
 
 #topoRoseLeft{
@@ -839,12 +850,25 @@ footer p{
     text-align: center;
 }
 
+#topoRoseSetaEsquerda{
+    font-size: 2em;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+#topoRoseSetaEsquerda a{
+    color: rgba(0, 0, 0, 0.7);
+}
+
 #topoRoseLeft h1{
     width: 40%;
     font-size: 2em;
     text-transform: uppercase;
     font-weight: 500;
-    margin: 100px auto;
+    margin: 0px auto;
 }
 
 .esquerda{
@@ -855,13 +879,13 @@ footer p{
     width: 33%;
 }
 
+
 #topoRoseCenter img{
     border: solid 6px rgb(190, 189, 189) ;
     width: 100%;
     height: 110%;
     border-radius:150px 150px;
-    margin-top: 100px;
-    margin-left:-5px;
+    margin-top: 300px;
 }
 
 #topoRoseRight{
@@ -869,12 +893,26 @@ footer p{
     text-align: center;
 }
 
+#topoRoseSetaDireita{
+    font-size: 2em;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 35%;
+    left: 70%;
+}
+
+#topoRoseSetaDireita a{
+    color: rgba(0, 0, 0, 0.7);
+}
+
 #topoRoseRight h1{
     width: 80%;
     font-size: 2em;
     text-transform: uppercase;
     font-weight: 500;
-    margin: 100px auto;
+    margin:0px auto;
+    margin-top: 10px;
 }
 
 #biografiaRose{
@@ -896,7 +934,7 @@ footer p{
 }
 
 #biografiaRose p{
-    color: rgb(0,0,0);
+    color:rgb(0,0,0,0.6);
     font-weight: 500;
     padding: 10px;
     font-size: 1.2em;
@@ -907,9 +945,10 @@ footer p{
     color:rgb(56, 167, 111);
 }
 
-#curiosidadesSobre{
+#bodyRose #curiosidadesSobre{
     margin-top: 20px;
-    height: 100%;
+    width: 100%;
+    height: 420px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -921,12 +960,12 @@ footer p{
     margin-top: 10px;
 }
 
-#curiosidadesSobre div{
+#bodyRose #curiosidadesSobre div{
     border-right:  solid 2px rgb(145, 143, 143,0.5);
     border-bottom:  solid 2px rgb(145, 143, 143,0.5);
     margin-top: 10px;
     width: 33%;
-    height: 200px;
+    height: 50%;
 }
 
 .centralizar{
@@ -948,6 +987,7 @@ footer p{
     text-transform: uppercase;
     letter-spacing: -1px;
     font-style: italic;
+    color:rgb(0,0,0,0.6);
 
 }
 
@@ -1177,13 +1217,18 @@ form input:focus::placeholder{
     /* ******* Media 1300px ******* */
 
     @media (max-width: 1365px){
-       #contatoRm,#nossaEstrutura,body{
+       #contatoRm,body{
            background-color: royalblue;
            overflow-x: hidden;
            /*max-height: 890px;
            min-height: 570px;
            */
            
+       }
+
+       #nossaEstrutura,body{
+        background-color: royalblue;
+        overflow-y: visible;
        }
 
        #picture{
@@ -1266,7 +1311,10 @@ form input:focus::placeholder{
         }
 
         #estruturaFotos{
-            height: 75%;
+            border: solid 1px red;
+            width: 100%;
+            height: 440px;
+            margin-top: -1px;
         }
 
         #estruturaFotos{
@@ -1419,7 +1467,7 @@ form input:focus::placeholder{
      /* ******* Media 1100px ******* */
 
      @media (max-width: 1100px){
-        #bioRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
+        #bodyRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
             background-color: yellow;
         }
 
@@ -1493,12 +1541,20 @@ form input:focus::placeholder{
             margin-left: -5%;
         }
 
+        #topoRoseCenter img{
+            min-width: 380px;
+            height: 110%;
+            border-radius:150px 150px;
+            margin-top: 300px;
+            margin-left: -5%;
+        }
+
      }
 
      /* ******* Media 1000px ******* */
 
      @media (max-width: 1000px){
-        #bodyMateus,#contatoRm,#nossaEstrutura,body{
+        #bodyRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
             background-color: orange;
             overflow-y: scroll;
         }
@@ -1665,12 +1721,30 @@ form input:focus::placeholder{
            
             left: 75%;
         }
+
+
+        #topoRoseCenter img{
+            min-width: 380px;
+            height: 110%;
+            border-radius:150px 150px;
+            margin-top: 300px;
+            margin-left: -10%;
+        }
+        
+        #topoRoseSetaEsquerda{
+            left: 22%;
+        }
+
+        #topoRoseSetaDireita{
+           
+            left: 74%;
+        }
      }
 
      /* ******* Media 840px ******* */
 
      @media (max-width: 840px){
-        #bodyMateus,#contatoRm,#nossaEstrutura,body{
+        #bodyRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
             background-color:purple;
         }
 
@@ -1736,6 +1810,19 @@ form input:focus::placeholder{
             margin-left: -10%;
         }
 
+        #topoRoseCenter img{
+            min-width: 350px;
+            height: 110%;
+            border-radius:150px 150px;
+            margin-top: 300px;
+            margin-left: -10%;
+        }
+
+        #topoRoseSetaDireita{
+           
+            left: 75%;
+        }
+
     
      }
 
@@ -1744,7 +1831,7 @@ form input:focus::placeholder{
      /* ******* Media 760px ******* */
 
      @media (max-width: 760px){
-        #bioRose,#bodyMateus,#contatoRm,body{
+        #bodyRose,#bodyMateus,#contatoRm,body{
             background-color:rgb(128, 0, 49);
             
         }
@@ -1956,24 +2043,45 @@ form input:focus::placeholder{
         #topoMateusSetaDireita{
            
             left: 78%;
-        }
+        }  /***************************/
 
         #topoRoseCenter img{
-            border: solid 6px rgb(190, 189, 189) ;
-            width: 100%;
-            height: 100%;
+            min-width: 350px;
+            height: 110%;
             border-radius:150px 150px;
-            margin-top: 130px;
-            margin-left:-5px;
+            margin-top: 300px;
+            margin-left: -10%;
         }
 
-        #topoRoseRight h1{
-            width: 80%;
-            font-size: 1.8em;
-            text-transform: uppercase;
-            font-weight: 500;
-            margin: 100px auto;
+        #topoRoseLeft{
+            width: 30%;
+            margin-left: -40px;
         }
+
+        #topoRoseRight{
+            
+            width: 30%;
+            margin-left: 30px;
+        }
+
+        #bodyRose #curiosidadesSobre div{
+            border: none;
+            padding: 5px;
+            width: 33%;
+            height: 50%;
+        }
+
+        #topoRoseSetaEsquerda{
+            left: 14%;
+        }
+
+
+        #topoRoseSetaDireita{
+           
+            left: 78%;
+        }
+
+        
         
 
        
@@ -1983,7 +2091,7 @@ form input:focus::placeholder{
       /* ******* Media 680px ******* */
 
       @media (max-width: 680px){
-        #bioRose,#bodyMateus,#nossaEstrutura,body{
+        #bodyRose,#bodyMateus,#nossaEstrutura,body{
             background-color:rgb(38, 0, 128);
         }
 
@@ -1998,6 +2106,10 @@ form input:focus::placeholder{
 
         #ulNav li a.border{
             display: none;
+        }
+
+        #navLateral div {
+            margin-top: 30px;
         }
 
        #bandeiraRm{
@@ -2130,26 +2242,37 @@ form input:focus::placeholder{
         #topoMateusSetaDireita{
            
             left: 79%;
-        }
+        } /**************/
 
         #topoRoseCenter img{
-            border: solid 6px rgb(190, 189, 189) ;
-            width: 100%;
-            height: 80%;
+            min-width: 330px;
+            height: 110%;
             border-radius:150px 150px;
-            margin-top: 150px;
-            margin-left:-5px;
+            margin-top: 300px;
+            margin-left: -10%;
         }
 
-       
-
-        #topoRoseRight h1{
-            width: 80%;
-            font-size: 1.6em;
-            text-transform: uppercase;
-            font-weight: 500;
-            margin: 100px auto;
+        #topoRoseLeft{
+            width: 25%;
+            margin-left: -40px;
         }
+
+        #topoRoseRight{
+            
+            width: 30%;
+            margin-left: 30px;
+        }
+
+        #topoRoseSetaEsquerda{
+            left: 8%;
+        }
+
+        #topoRoseSetaDireita{
+           
+            left: 79%;
+        }
+
+        
         
 
      }
@@ -2157,7 +2280,7 @@ form input:focus::placeholder{
       /* ******* Media 600px ******* */
 
       @media (max-width: 600px){
-        #bioRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
+        #bodyRose,#bodyMateus,#contatoRm,#nossaEstrutura,body{
             background-color:rgb(7, 160, 180);
            
         }
@@ -2250,20 +2373,36 @@ form input:focus::placeholder{
         #topoMateusSetaDireita{
            
             left: 85%;
+        }/*****************/
+
+        #topoRoseCenter img{
+            min-width: 330px;
+            height: 110%;
+            border-radius:150px 150px;
+            margin-top: 300px;
+            margin-left: 0%;
         }
 
-        #topoRoseRight h1{
+        #topoRoseLeft{
+            width: 25%;
+            margin-left: -40px;
+        }
+
+        #topoRoseRight{
             
-            font-size: 1.4em;
+            width: 40%;
+            margin-left:20px;
+            margin-top: -10px;
+            display: flex;
+        }
+        
+        #topoRoseSetaEsquerda{
+            left:6%;
         }
 
-
-        #topoRoseLeft h1{
-            width: 40%;
-            font-size: 1.8em;
-            text-transform: uppercase;
-            font-weight: 500;
-            margin: 100px auto;
+        #topoRoseSetaDireita{
+           
+            left: 85%;
         }
 
     
@@ -2272,7 +2411,7 @@ form input:focus::placeholder{
       /* ******* Media 500px ******* */
 
       @media (max-width: 500px){
-        #bioRose,#bodyMateus,#nossaEstrutura,body{
+        #bodyRose,#bodyMateus,#nossaEstrutura,body{
             background-color:rgb(180, 7, 7);
         }
 
@@ -2383,22 +2522,57 @@ form input:focus::placeholder{
            
             left: 79%;
         }
-        #topoRoseLeft h1{
-            margin-left: 13%;
+
+        /******/
+
+        #topoRoseLeft{
+            width: 25%;
+            margin-left: -30px;
         }
 
-        #topoRoseRight h1{
-            margin-left: -8%;
-            font-size: 1.3em;
+        #topoRoseRight{
+            width: 60%;
+            margin-left:-20px;
+            margin-top: -10px;
+            display: flex;
         }
 
         #topoRoseCenter img{
-            width: 110%;
-            height: 70%;
+            min-width: 300px;
+            height: 110%;
             border-radius:150px 150px;
-            margin-top: 160px;
-            margin-left:-15px;
+            margin-top: 300px;
+            margin-left: -10%;
         }
+
+        #topoRoseSetaEsquerda{
+            top: 50%;
+            left:0%;
+
+        }
+
+        #topoRoseSetaDireita{
+            top: 50%;
+            left: 79%;
+        }
+
+        #bodyRose #curiosidadesSobre div{
+            border: none;
+            padding: 5px;
+            width: 33%;
+            height: 45%;
+            margin-bottom: -5px;
+        }
+
+        #nossaEstrutura #navBar ul li a img{
+            width: 100px;
+            height:90px;
+            object-fit: fill;
+            border-radius: 20px;
+            padding-top: 10px;
+            margin-left: 10px;
+        }
+       
 
         
         
@@ -2437,15 +2611,49 @@ form input:focus::placeholder{
             left: 83%;
         }
 
+        #topoRoseSetaEsquerda{
+            left:0%;
+        }
+
+        #topoRoseSetaDireita{
+           
+            left: 83%;
+        }
+
 
         
      }
+
+     @media (max-width: 414px){
+        #bodyRose,body{
+            background-color:rgb(173, 110, 147);
+        }
+        #bodyRose header{
+            width: 103%;
+        }
+        #topoRose{
+            width: 103%;
+        }
+
+        #topoRoseSetaEsquerda{
+            top: 42%;
+            left:0%;
+        }
+
+        #topoRoseSetaDireita{
+           top: 42%;
+            left: 83%;
+        }
+
+        footer{
+            width: 103%;
+        }
 
 
       /* ******* Media 400px ******* */
 
       @media (max-width: 400px){
-        #bioRose,#bodyMateus,#nossaEstrutura,body{
+        #bodyRose,#bodyMateus,#nossaEstrutura,body{
             background-color:rgb(164, 173, 110);
         }
 
@@ -2628,15 +2836,41 @@ form input:focus::placeholder{
         #topoMateusSetaDireita{
             top: 65%;
             left: 85%;
+        }/*************/
+
+        #topoRoseLeft h1{
+            width: 40%;
+            font-size: 1.7em;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: 0px auto;
         }
-        
+
+        #topoRoseRight h1{
+            font-size: 1.7em;
+        }
+
+        #topoRoseRight .movimento{
+            font-size: 0.5em;
+        }
+
         #topoRoseCenter img{
-            width: 110%;
-            height: 6   0%;
-            border-radius:150px 150px;
-            margin-top: 160px;
-            margin-left:-15px;
-        }     
+        
+            margin-left: -20%;
+        }
+
+        #topoRoseSetaEsquerda{
+            top: 65%;
+            left:-3%;
+        }
+
+        #topoRoseSetaDireita{
+            top: 65%;
+            left: 85%;
+        }
+    
+
+        
      }
 
      @media (max-width: 375px){
@@ -2649,26 +2883,30 @@ form input:focus::placeholder{
             margin-left: -20px;
         }
 
-        #topoRose{
-            width: 105%;
-        }
-
-        #topoRoseCenter img{
-            width: 120%;
-            height: 60%;
-            border-radius:150px 150px;
-            margin-top: 160px;
-            margin-left:-30px;
-        }
-
-        #topoRoseLeft h1{
-            font-size: 1.5em;
-        }
-
         #topoRoseRight h1{
-            margin-left: -10%;
-            font-size: 1em;
+            font-size: 1.6em;
+            margin-left: -30px;
         }
+
+        #topoRoseSetaDireita{
+            left: 78%;
+            top: 55%;
+        }
+
+        #topoRoseSetaEsquerda{
+            top: 55%;
+        }
+
+        #bodyRose #curiosidadesSobre div{
+            border: none;
+            padding: 5px;
+            width: 33%;
+            height: 45%;
+            margin-bottom: -5px;
+        }
+
+
+        
      }
 
      @media (max-width: 321px){
@@ -2738,7 +2976,45 @@ form input:focus::placeholder{
 
         #bodyMateus header{
             width: 350px;
+        }/*************/
+
+        #topoRose{
+            width: 350px;
         }
+        #topoRoseLeft h1{
+            font-size: 1.5em;
+            margin-left: 35px;
+        }
+
+        #topoRoseCenter img{
+            min-width: 260px;
+            height: 110%;
+            border-radius:150px 150px;
+            margin-top: 300px;
+            margin-left: -20%;
+        }
+
+        #topoRoseRight h1{
+            font-size: 1.5em;
+            margin-left: -60px;
+        }
+
+        #topoRoseSetaDireita{
+            left: 78%;
+        }
+
+        #bodyRose header{
+            width: 350px;
+        }
+
+        #bodyRose #curiosidadesSobre div{
+            border: none;
+            padding: 5px;
+            width: 33%;
+            height: 44%;
+            margin-bottom: -20px;
+        }
+
 
      }
     
