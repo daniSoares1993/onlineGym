@@ -1032,7 +1032,7 @@ footer p{
 }
 
 #estruturaFotos .hrcross{
-    background-color:color:rgba(36, 36, 36, 0.7);
+    background-color:rgba(36, 36, 36, 0.7);
 }
 
 #galeriaImagens{
@@ -1114,6 +1114,7 @@ footer p{
 #contatoRm {
     background-color: #fff;
     overflow: hidden;
+    overflow-x: hidden;
 }
     #backgroundContato{
         background-color:  rgb(56, 167, 111);
@@ -3002,7 +3003,7 @@ form input:focus::placeholder{
         }
         #topoMateusLeft h1{
             font-size: 1.5em;
-            margin-left: 45px;
+            margin-left: 35px;
         }
 
         #topoMateusCenter img{
@@ -3014,13 +3015,25 @@ form input:focus::placeholder{
         }
 
         #topoMateusRight h1{
-            font-size: 1.5em;
-            margin-left: -22px;
+            font-size: 1.4em;
+            margin-left: -40px;
+        }
+
+        #topoMateusSetaDireita{
+            left: 80%;
         }
 
         #bodyMateus header{
             width: 350px;
-        }/*************/
+
+        
+        }
+
+        #bodyMateus footer{
+            width: 107%;
+            position: absolute;
+            bottom: 95;
+        }
 
         #topoRose{
             width: 350px;
@@ -3043,8 +3056,14 @@ form input:focus::placeholder{
             margin-left: -60px;
         }
 
+        #topoRoseSetaEsquerda{
+            top: 65%;
+
+        }
+
         #topoRoseSetaDireita{
-            left: 78%;
+            top: 65%;
+            left: 80%;
         }
 
         #bodyRose header{
@@ -3055,8 +3074,14 @@ form input:focus::placeholder{
             border: none;
             padding: 5px;
             width: 33%;
-            height: 44%;
-            margin-bottom: -20px;
+            height: 52%;
+            margin-bottom: -40px;
+        }
+
+        #bodyRose footer{
+            width: 107%;
+            position: absolute;
+            bottom: 100;
         }
 
 
