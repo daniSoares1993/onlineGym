@@ -14,12 +14,15 @@ var area13 = document.getElementById("estImg13");
 var area14 = document.getElementById("estImg14");
 var area15 = document.getElementById("estImg15");
 
+
+
 var estruturaFotos  = document.getElementById("estruturaFotos");
 var btnClose = document.getElementById("close")
 var btnLeft = document.getElementById("left");
 var btnRight = document.getElementById("right");
 var imgGrande = document.getElementById("imagemGrande");
 var bodyEstrutura = document.getElementById("nossaEstrutura");
+var estruturaH1 = document.getElementById("estruturaH1");
 var i = 1;
 var img1 = "url(../onlineGym/imagens/local.png)";
 var img2 = "url(../onlineGym/imagens/espaco2.jpg)";
@@ -35,7 +38,7 @@ var btnClass = document.getElementsByClassName('active');
 
 btnClose.addEventListener("click",() => {
     imgGrande.style.display = "none";
-    bodyEstrutura.style.overflowY= "visible";;
+    bodyEstrutura.style.overflowY= "visible";
 })
 
 
@@ -44,6 +47,7 @@ area1.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "url(../onlineGym/imagens/local.png)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 
 })
 
@@ -52,6 +56,7 @@ area2.addEventListener("click",() => {
 imgGrande.style.display = "block";
 imgGrande.style.backgroundImage = "url(../onlineGym/imagens/espaco2.jpg)";
 bodyEstrutura.style.overflow = "hidden";
+estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 
@@ -59,6 +64,7 @@ area3.addEventListener("click",() => {
 imgGrande.style.display = "block";
 imgGrande.style.backgroundImage = "url(../onlineGym/imagens/img4.jpg)";
 bodyEstrutura.style.overflow = "hidden";
+estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 
@@ -66,72 +72,84 @@ area4.addEventListener("click",() => {
 imgGrande.style.display = "block";
 imgGrande.style.backgroundImage = "url(../onlineGym/imagens/espaco6.jpg)";
 bodyEstrutura.style.overflow = "hidden";
+estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 area5.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "url(../onlineGym/imagens/img1.jpg)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 area6.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "url(../onlineGym/imagens/img2.jpg)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 area7.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "../onlineGym/imagens/img3.jpg)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 area8.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "url(../onlineGym/imagens/img4.jpg)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 area9.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "url(../onlineGym/imagens/img5.jpg)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 area10.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "url(../onlineGym/imagens/img6.jpg)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 area11.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "url(../onlineGym/imagens/img7.jpg)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 area12.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "url(../onlineGym/imagens/img8.jpg)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 area13.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "url(../onlineGym/imagens/img9.jpg)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 area14.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "url(../onlineGym/imagens/img13.jpg)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 area15.addEventListener("click",() => {
     imgGrande.style.display = "block";
     imgGrande.style.backgroundImage = "url(../onlineGym/imagens/img16.jpg)";
     bodyEstrutura.style.overflow = "hidden";
+    estruturaH1.scrollIntoView({behavior:"smooth"});
 })
 
 
@@ -171,3 +189,5 @@ btnRight.addEventListener("click",() => {
                 divFotos.style.visibility = "visible";
             }
         })
+
+    
